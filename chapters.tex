@@ -1,0 +1,95 @@
+% originally by Sangchul Hahn, and revised by H. Choi
+
+% Chapter
+\chapter{Chapter One}
+\thispagestyle{fancy}
+\bigskip
+\input{sections/1_intoduction.tex}
+
+% Chapter 
+\clearpage
+\chapter{Chapter Two}
+\thispagestyle{fancy}
+\bigskip
+\input{sections/2_related_work.tex}
+
+% Chapter 
+\clearpage
+\chapter{Chapter Three}
+\thispagestyle{fancy}
+\bigskip
+\input{sections/3_approach.tex}
+
+% Chapter 
+\clearpage
+\chapter{Chapter Four}
+\thispagestyle{fancy}
+\bigskip
+\input{sections/4_experimental_setup.tex}
+
+% Chapter 
+\clearpage
+\chapter{Chapter Five}
+\thispagestyle{fancy}
+\bigskip
+\input{sections/5_experiment_results.tex}
+
+% Chapter 
+\clearpage
+\chapter{Chapter Six}
+\thispagestyle{fancy}
+\bigskip
+\input{sections/6_discussions.tex}
+
+% Chapter 
+\clearpage
+\chapter{Chapter Seven}
+\thispagestyle{fancy}
+\bigskip
+\input{sections/7_conclusion.tex}
+
+
+% References Chapter
+\clearpage
+\chapter{References}
+\thispagestyle{fancy}
+\printbibliography
+
+
+
+
+
+% \section{Variational Auto-Encoder}
+% Variational Auto-Encoder (VAE) \cite{vae-kingma} is the most commonly used deep generative model based on auto-encoder model. VAE model also consists of encoder and decoder. Encoder encodes input data into latent variable which has much less dimension than input data and decoder reconstructs input data from the latent variable encoded by encoder. The difference between auto-encoder and VAE is that VAE is making a latent variable by sampling from Gaussian distribution and has a constraint on the latent space which is forced to be isotropic Gaussian by minimizing the Kullback-Leibler (KL) divergence between the Gaussian prior and the model distribution. The following Eq. \ref{eq:vae} describes the objective function of VAE. It has two terms: reconstruction error between input data and generated data, and KL divergence between the latent distribution and the Gaussian prior distribution. 
+% \begin{equation}
+% \mathcal{L}_{VAE} = \mathbb{E}_{q(z|x)}[\log p(x|z)] - KL(q(z|x)||p(z)),
+% \label{eq:vae}
+% \end{equation}
+% where $KL(q||p)$ means the KL divergence between $q$ and $p$, and $q(z|x)$, $p(x|z)$ and $p(z)$ are the encoder, decoder and the prior distribution, respectively. The encoder and decoder are implemented by deep neural networks, and the prior distribution is isotropic Gaussian. See \cite{vae-kingma} for the details.
+
+% Since the latent space generates samples for the decoder, the reparameterization trick is applied to make the gradient information flow through the latent space. After training the model, the latent space keeps most information to reconstruct input data, as well as it becomes Gaussian as much as possible. In other words, VAE cannot have perfectly disentangled latent variable even with the isotropic Gaussian prior. Fig. \ref{fig:vae-model} shows the basic model architecture of VAE.
+% \begin{figure}[ht!]
+% \label{fig:vae-model}
+% \centerline{\hbox{
+% \includegraphics[width=2.75in]{VAE_model.png}
+% }} 
+% \caption[VAE model]{Model architecture of VAE.}
+% \end{figure}
+
+% \section{Generative Adversarial Network}
+% Generative Adversarial Network (GAN) has become one of the most famous model since it was proposed. The GAN architecture has a discriminator network and a generator network. The basic algorithm of GAN is that the discriminator is trained to distinguish the real data and generated data with latent random variable ($z$) from generator, while the generator is trained to generate data that is hard to be distinguished by the discriminator. This process is a kind of min-max game between the discriminator and the generator. The objective function of GAN can be written as Eq. \ref{eq:gan}. 
+% \begin{equation}
+%     \min_{G}\max_{D}V(D,G)=\mathbb{E}_{x\sim p_{data}(x)}[\log D(x)] + \mathbb{E}_{z\sim p_z(z)}[\log (1-D(G(z)))],
+% \label{eq:gan}
+% \end{equation}
+% where $z$, $D(x)$ and $G(z)$ represent latent variable, discriminator and generator, respectively.
+
+% The basic architecture of GAN model is presented in Fig. \ref{fig:gan-model}. Image generation models based on GAN showed remarkable results. After the basic GAN was proposed, many improved GAN models like DCGAN, WGAN, etc. have been introduced to conduct various generation tasks (e.g., style transfer, learning generating factors and etc.) and to make the training of GAN more stable. Contrary to VAE, in the conventional GAN models, there is no constraint on the latent space.
+
+% \begin{figure}[ht!]
+% \label{fig:gan-model}
+% \centerline{\hbox{
+% \includegraphics[width=3.75in]{GAN_model.png}
+% }}
+% \caption[GAN model]{Model architecture of GAN.}
+% \end{figure}

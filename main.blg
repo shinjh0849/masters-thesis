@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: references.bib
+Biblatex version: 3.8
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 31 entries,
+            6268 wiz_defined-function locations,
+            1357 strings with 14790 characters,
+and the built_in function-call counts, 230308 in all, are:
+= -- 15686
+> -- 5541
+< -- 1305
++ -- 7013
+- -- 2621
+* -- 19195
+:= -- 25204
+add.period$ -- 0
+call.type$ -- 31
+change.case$ -- 436
+chr.to.int$ -- 34
+cite$ -- 60
+duplicate$ -- 24574
+empty$ -- 18927
+format.name$ -- 3292
+if$ -- 46364
+int.to.chr$ -- 0
+int.to.str$ -- 81
+missing$ -- 0
+newline$ -- 1299
+num.names$ -- 1426
+pop$ -- 10826
+preamble$ -- 1
+purify$ -- 775
+quote$ -- 0
+skip$ -- 6742
+stack$ -- 0
+substring$ -- 26479
+swap$ -- 5702
+text.length$ -- 1278
+text.prefix$ -- 30
+top$ -- 1
+type$ -- 1042
+warning$ -- 0
+while$ -- 3074
+width$ -- 0
+write$ -- 1269

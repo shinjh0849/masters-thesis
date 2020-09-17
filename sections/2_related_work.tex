@@ -1,0 +1,96 @@
+\section{Related Work}
+\subsection{Similar Commit Search}
+The key part of our approach is that SimFin finds which commits in the existing repositories that are simmilar to the target commit. Existing studies that are related to this technique are code clone detection/search, code search engines, commit clustering.
+
+\subsubsection{Code Clone Detection/Search}
+Jiang et al. \cite{jiang2007deckard} proposed an approach named DECARD which represents code blocks as subtrees and uses similarity algorithms on tree data structures.
+Lee et al. \cite{lee2010instant} proposed a method that uses multi-dimennsional indexing technique and kNN (k-Nearest Neighborhood) algorithm to reduce the search time while maitaining the functianlity of finding sematically similar code fragments.
+They used 54 MLOC of code to make this code clone detection module.
+Keivanloo et al. \cite{keivanloo2011internet} did a similar research, but their main diference is in that they used hash tables and binary search algorithm in implementing a multi-level indexing technique.
+They experimented and evaluated on 266 MLOC of code bases.
+White et al. \cite{white2016deep} exploited deep learning techniques that are used in natural language processing (e.g. Recursive Neural Network, or Recurrent Neural Network) to extract syntactical patterns and detect code clones with similar patterns. 
+
+The difference between code clone detection/search and similar commit search is that they have different structures of code bases.
+Commit shows how code is changed from one code to the other which contains information such as which nodes are added, deleted, updated, or moved, or the metadata of the commit such as which developer is responsible for the change, time of commit, number of changed files, and so on.
+Due to their structural differences, the necessity of studying a different approach is evident. 
+
+\subsubsection{Code Search Engine}
+Bajracharya et al. \cite{bajracharya2006sourcerer} proposed a tool named Sourcerer which searches for code fragments.
+The tool divides target code fragments respect to the code usage to improve the search rate.
+The have divided the categories into implementation, uses, and structures.
+McMillan et al. \cite{mcmillan2011exemplar} proposed Exemplar (\underline{Exe}cutable ex\underline{mpl}es \underline{ar}chive) helps find code fragments that functions as the natural language query input.
+This study focused on improving the search rate by reducing the gap between the high abstraction of natural language query and low level language of source code.
+Kim et al. \cite{kim2010towards} proposed a tool that when a user searches for a API document, it returns code snippets that can be helpful for the API's usage together with the document.
+Kim et al. \cite{kim2018facoy} proposed FACOY (\underline{F}ind \underline{A} \underline{C}ode \underline{O}ther than \underline{Y}ours) searches for a code fragment that is similar to the user's input but not in a syntactical or semantical way but with a similar function.
+Gu et al. \cite{gu2018deep} proposed CODEnn (\underline{Co}de-\underline{D}escription \underline{E}mbedding \underline{n}eural \underline{n}etwork) to find a semantical significance of the natural language query and the target code snippet.
+They do this buy mapping both natural language and code snippet in high dimennsional vector space and trains a deep learning model to map these instances as close to a space if they have semantically similar.
+
+The difference between code search and commit search is that static code and commit has different structure, just as code clone search.
+Second, code search techniques are more focused on handling natural language query as input.
+While some do handle code fragments, they are limited in their ability to handle longer code fragments. 
+To do a fully commit search, we must be able to handle longer code bases as input to search for commits because commits can be very long.
+
+\subsubsection{Commit Clustering}
+Kreutzer et al. \cite{kreutzer2016automatic} did a study about clustering similar commits respect to their major functions (e.g. bug fixing, refactoring, etc.).
+To do that, they have extracted commits that are in existing software repositories such as Git and applied LCS (Longest Common Subsequence) algorithm to retrieve a matrix of commit's similarities.
+With this matrix, they applied two kinds of clustering algorithms to categorize commits that have similar scores.
+Dias et al. \cite{dias2015untangling} did a similar work but with a different scope.
+They categorized different changes within a commit respect to different intentions.
+They studied this because with a single commit, developers change several files that are sometimes nothing to do with their intentions (i.e. tangled change).
+To do this, they used IDE activity history, and applied different machine learning algorithms (i.e. binary logistic regression, random forest, naive bayes, etc.) for classification and applied hierarchical clustering to cluster them.
+
+The difference between commit clustering and commit search is that in \cite{kreutzer2016automatic}, the clusterings are too big to find the syntactical or semantical similarities of each commits. And as for \cite{dias2015untangling}, the granularity of change is within a single commit, making it hard to scale up to search similar commits in other projects.
+
+\subsection{Defect Prediction}
+In this section, we survey the various defect prediction methods and explain how they are different from each other and from our work.
+\subsubsection{Traditional Defect}
+Traditional defect prediction predicts a module in different granularity as buggy or clean.
+In traditional defect prediction scenario, the granularity is usually in the file-level or the method level.
+They use previous version of their own project to predict the current or latter version of the project.
+Munson et al. \cite{munson1992detection} built a classification model to classify if a module has high risk or not with the accuracy of 92\%.
+Chidamber and Kemerer \cite{chidamber1994metrics} proposed a suite of object-oriented related metrics that could be applied in defect prediction.
+Nagappan and Ball \cite{nagappan2005use} proposed code churn metrics to predict defect density of the system.
+This was the first process related metrics and more process related metrics were proposed after.
+
+\subsubsection{Cross-Project Defect Prediction}
+Cross-project defect prediction (CPDP) was proposed to alleviate the cold-start problem of the traditional defect prediction because traditional defect prediction relied on previous versions of the target project.
+For project with little or no previous data, it is very hard or impossible to apply defect prediction.
+So CPDP uses data from other projects to learn the prediction model.
+Watanabe et al. \cite{watanabe2008adapting} proposed the first CPDP approach to apply prediction model that are already built for other projects.
+Ma et al. \cite{ma2012transfer} proposed Transfer Naive Bayes (TNB) that weights source instance similar to the target instances
+Nam et al. \cite{nam2013transfer} proposed TCA+ to alleviate feature differencing problem in applying CPDP.
+
+\subsubsection{Heterogeneous Defect Prediction}
+Heterogeneous defect prediction was first proposed by \cite{nam2017heterogeneous}. It is a cross-project defect prediction where the source project and the target project have different feature space.
+This method enables source project to have different set of features which was an impossible thing to do.
+With this technique, it expanded the range of projects to be selected as training set, which is very important because collecting buggy data is very hard.
+Li et al. \cite{li2018cost} proposed cost-sensitive transfer kernel canonical correlation analysis (CTKCCA) to evaluate nonlinear correlation relationship of the different features.
+Li et al. \cite{li2019heterogeneous} proposed a two-staged ensemblme learning (TSEL) approach for HDP, which contains ensemble multi-kernel domain adaptation stage and ensemble data sampling stage. These stages handles seprates nonlinear correlation of the features and the imbalance class of the labels.
+Tong et al. \cite{tong2019kernel} proposed a kernel spectral embedding transfer ensemble (KSETE) which addresses the class imbalance problem, finds the latent common feature space by combining kernel spectral embedding.
+
+\subsubsection{Just-in-Time Defect Prediction}
+Just-in-time defect prediction (JIT DP) tackles another problem in the traditional defect prediction.
+The actionability of traditional defect prediction is limited because usually a predicted module is too big,
+making it very hard for the developers to act upon to fix the bug.
+In JIT DP, the granularity of the prediction is at the change-level, usually smaller than a whole source file, making it easier for the developers to act upon due to the smaller code base.
+Mockus et al. \cite{mockus2000identifying} proposed the first to identify changes with respect to their specific reasons of causes: adding new features, correcting faults, and restructuring code for future changes.
+Kim et al. \cite{kim2008classifying} is the first study that did a machine learning modelling for predicting buggy change of a project.
+Kamei et al. \cite{kamei2016studying} empirically evaluated JIT prediction model in the context of cross-project scenario.
+They found that the models improve performance when selecting models that use other similar projects, using a larger pool of dataset, and using several projects for ensemble learning.  
+
+These various defect prediction models use machine learning for prediction.
+On the contrary, our method of defect prediction does not use any machine learning algorithms for prediciton.
+Eventhough we use autoencoder and kNN, it is for searching similar commits.
+The predictions are made comparing the distance and cutting them with a threshold value.
+
+% Survey some CPDP and JIT DPs. Explain what they use for their defect prediction.
+% Explain how the existing DPs are different from ours. 1. We do not use ML algos in prediction. (we use auto-encoder and knn, but they don't play a role in prediction phase).
+
+% Survey studies that finds similar commits. 
+
+% code search engines,
+% code clone studies,
+% clustering of code commits,
+% untangling fine-grained code changes.
+
+% explain how their approach is different from our SimFin finding simmilar changes.

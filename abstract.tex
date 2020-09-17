@@ -1,0 +1,26 @@
+% originally by Sangchul Hahn, and revised by H. Choi
+
+\newcommand{\abstractEN}[1]{\normalsize #1 \par}
+\newcommand{\abstractKR}[1]{\normalsize #1 \par}
+
+\fontsize{14}{18} \selectfont Abstract \par
+\addcontentsline{toc}{chapter}{Abstract}
+
+\bigskip
+\abstractEN{
+    Defect prediction studies have been actively conducted over the past decades.
+    The existing defect prediction models face challenges in cold-start problem and the lack of actionable messages.
+    To overcome these issues, various approaches such as Cross-Project Defect Prediction (CPDP), unsupervised defect prediction, and Just-in-time Defect Prediction (JIT-DP) have been studied.
+    However, these studies still have limitations in several aspects.
+    Hence, we propose a novel and potential approach of predicting defects in the commit level by searching for similar commits in existing software repositories.
+    The model predicts a commit as ``buggy'' if the commit is similar to the existing Bug Inducing Commit (BIC) and if it is far away, it will predict as ``clean''.
+    Then, it suggests a corresponding fix changes to the similar BIC as an actionable message for the bug-prone change.
+    Our approach shows the potential to address the two issues of defect prediction models by alleviating the cold-start problems and suggesting patches for actionable messages. 
+}
+\bigskip
+\bigskip
+\abstractKR{
+초록 한글은 여기에 넣으세요. 
+}
+
+\clearpage

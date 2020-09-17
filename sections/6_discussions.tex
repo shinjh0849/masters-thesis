@@ -1,0 +1,56 @@
+\section{Discussion}
+In this section, we will discuss about how this approach is important in the software engineering practice, especially in automated quality assurance technique.
+
+\subsection{Importance of this Approach}
+Our method of defect prediction is a novel technique which does not use machine learning algorithm in the prediction phase.
+In existing studies such as traditional, cross-project, heterogeneous, and just-in-time defect prediction, major issues are caused by the short comings of machine learning techniques.
+Cold-start problem is caused because training data is necessary for the model to be build from the target project.
+This issue is alleviated through the study of CPDP, however, CPDP does not perfectly solve the cold-start problem because many of the approaches use historical metrics as a feature. 
+Because {\simfinmo} exploits existing software projects without the need of historical metrics, it fully resolves the cold-start problem.
+
+Another major problem of defect prediction is the lack of actionable messages to act upon. 
+Traditional defect prediction model predicted the risk of module in a file or method level.
+For larger projects, developers needed so much time to find the bug inside the risky module and to find the fix for it.
+To resolve this issue, JIT defect prediction was actively studied because a code change were usually a lot smaller than a whole file or method.
+By making the granularity smaller, developers can easily identify the location of the defect relatively because there are shorter amount of code to inspect.
+However, this does not resolve the fundamental problem.
+JIT defect prediction does not tell the developers how to correct the defect.
+By using {\simfinmo}, we can identify which change is risky and we can also show the original BFC which is associated to the BIC that has the nearest distance value.
+The suggested BFC might not be the exact fix for the defect, however, it can provide some ideas to assist on fixing the risky change to the developer.
+
+\subsection{Future Work}
+For future work, it is necessary to find the right threshold value to separate clean instances and buggy instances.
+Currently we used different values for different test projects which can only cut the relationship of the classes linearly.
+However, more studies can be proposed to distinguish this relationship in a more complex, non-linear way.
+Currently, it is difficult to find a global threshold that will work best for all the projects.
+This is crucial for the predictor to work on newly started project because there are no historical data to find the best threshold.
+
+Also, it is promising to use the suggested BFCs as an ingredient or operation list that can be used in the automatic program repair field.
+In the field of automatic program repair, reducing the search space is critical to find the right patch within a feasible time.
+Ingredients retrieved from suggested BFC could be very helpful to reduce the search space of finding the correct patch.
+Fig. \ref{fig:ex_1} is an instance of BFC that we collected from project sqoop, one of the test project. 
+A BIC is retrieved from blame tracing the deleted BFC lines.
+When a BIC is retrieved, it searches for the most similar change in a repository.
+From the searched similar change, we can get the associated BFC, which is show at Fig. \ref{fig:ex_2}.
+BFC from Fig. \ref{fig:ex_1} shows that a parameter of a method invocation was deleted.
+BFC from Fig. \ref{fig:ex_2} shows that a different method was invoked with one less parameter.
+Even though the second change was calling a different method, we can infer that the two methods have a similar function by looking at the method name (addHtmlComponent and addComponent) and the parameters they are using.
+Despite the different context (different project, return type of method) we can get a hint of which operation to use in automatic program repair, which is update method, or update method parameter.
+With these hints, we can help automatic program repair approaches to reduce the search space of operation they use to enlarge other search spaces.
+
+
+\begin{figure}[!tbp]
+\renewcommand{\arraystretch}{1}
+    \centering
+    \includegraphics[width=\linewidth]{figures/patchsuggstion_ex1.pdf}\hfill
+    \caption{Example of a ground truth BFC from project sqoop.}
+    \label{fig:ex_1}
+\end{figure}
+
+\begin{figure}[!tbp]
+\renewcommand{\arraystretch}{1}
+    \centering
+    \includegraphics[width=\linewidth]{figures/patchsuggstion_ex2.pdf}\hfill
+    \caption{Example of suggested BFC from the project myfaces.}
+    \label{fig:ex_2}
+\end{figure}

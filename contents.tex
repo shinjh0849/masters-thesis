@@ -1,0 +1,53 @@
+% originally by Sangchul Hahn, and revised by H. Choi
+
+\clearpage
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}%
+    {\par\vspace{\baselineskip}}{}{}
+\makeatother
+\titlespacing*{\chapter}{0mm}{0em}{0em}
+
+% Format for Table of Contents
+\renewcommand{\cftchapdotsep}{\cftdotsep}  %add dot separators
+\renewcommand{\cftchapfont}{\normalsize}  %set title font weight
+\renewcommand{\cftchappagefont}{}  %set page number font weight
+\renewcommand{\cftchapaftersnum}{.}
+\renewcommand{\cftsecaftersnum}{.}
+\renewcommand{\contentsname}{\hfill \fontsize{14}{20} \selectfont CONTENTS \hfill}
+
+%format title font size and position (this also applys to list of figures and list of tables)
+\titleformat{\chapter}[display]
+{\fontsize{14}{20}}{\thechapter}{0pt}{\hfill\selectfont#1\hfill}
+
+% ToC
+\currentpdfbookmark{Table of Contents}{Contents}
+\begin{singlespace}
+\tableofcontents
+\end{singlespace}
+
+% Figures
+\clearpage
+\begin{singlespace}
+\renewcommand{\cftfigpresnum}{Figure } % put before the number
+\renewcommand{\cftfigaftersnum}{.}  % put after the number
+\newlength{\figlen}
+\settowidth{\figlen}{0mm}
+\addtolength{\cftfignumwidth}{\figlen}
+\setlength\cftbeforefigskip{\baselineskip}  %manually set spacing between entries
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+\end{singlespace}
+
+% Tables
+\clearpage
+\begin{singlespace}
+\renewcommand{\cfttabpresnum}{Table } % put before the number
+\renewcommand{\cfttabaftersnum}{.}  % put after the number
+\newlength{\tablen}
+\settowidth{\tablen}{0mm}
+\addtolength{\cfttabnumwidth}{\tablen}
+\setlength\cftbeforetabskip{\baselineskip}  %manually set spacing between entries
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+\end{singlespace}
+\clearpage

@@ -1,0 +1,97 @@
+\section{Experiment Results}
+This section shows the experimental results of the reproduced method of Kamei et al. \cite{kamei2012large} and our approach of {\simfinmo}.
+Table \ref{tab:results} shows the overall results of the baseline and our approach.
+
+\subsection{RQ1: Is {\simfinmo} comparable to various machine learners?}
+From Table \ref{tab:results},
+We can see that all most all of the Kamei's results has better results in precision.
+On the other hand, results for {\simfinmo} always has better performance in recall.
+Due to precision and recall having trade-offs with each other, it is better to see the F-measure which is the harmonic mean of precision and recall.
+From the results, we can see that out of 7 projects, {\simfinmo} outperforms 5/7 of the projects in F-measure.
+From the results, we can state that {\simfinmo} outperforms Kamei overall.
+
+\subsection{RQ2: What are the impact of various {\simfinmo} cutoffs in terms of prediction performance?}
+To provide a better concept of how well the model {\simfinmo} predicts defective modules, we have investigated the different performance values with different cutoff values.
+The results are tabulated in Table \ref{tab:rq_2}.
+Due to the limitation of space in the report, we have only tabulated one of the test projects, ranger.
+From the table, we can see that precision score is highest when the cut-off value converges to zero.
+However, the recall value is the lowest.
+The precision score peaks when the cut-off ranges from 0.000001 to 0.1 for other projects as well.
+On the other hand, precision drops pretty low when the cut-of value goes over 1.
+Similarly, recall continues to go up when the cut-off value gets higher.
+The behavior of the cut-off values are the same with machine learning.
+When the predictor has low cut-of value 
+
+\subsection{Analysis}
+Table \ref{tab:results} shows the prediction performances between baseline and {\simfinmo} in various measures such as precision, recall, f-measure. The baseline based on Kamei metrics was evaluated using six classification algorithm such as Bayes Net, Naive Bayes, Random Forest, LMT, J48 and IBk. 
+
+We use Friedman and Nemenyi test to statistically evaluate the performance of algorithms of {\simfinmo} and baseline. Friedman test is a non-parametric test to determine the statistical significant of the data that is classification algorithm, and usually comparing three or more data. In this paper, Friedman test is used to compare the statistical significance of evaluation metrics of all the classifiers of each project. The outputs of Friedman test are degree of freedom that is the maximum number of logically independent values, Friedman chi-squared that if the value is large, there is a relationship and if it is small, there isn't relationship and p-value that mean the relationship is statistically significant when the value is less than 0.05.
+The p-value of precision is  0.008772, and Friedman chi-squared is 17.143. The p-value of recall is 5.88E-06, and Friedman chi-squared is 34.303. Lastly, p-value of f-measure is 0.2179, and Friedman chi-squared is 8.2857. They all have the same degree of freedom that is 6. As a result, since the p-value of precision and recall is less than 0.05, it was statistically verified that there is a difference in performance of the algorithm. Nemenyi test has characteristics similar to Friedman test since it is usually conducted after Friedman test. It compare statistical significant between two pairwise data. By Friedman test we found that there was a difference in the defect prediction performance of the algorithm. Therefore, we conduct Nemenyi test which calculate two algorithms difference in performance. P-value is created by comparing seven classifiers with other classifiers other than oneself.
+
+
+\begin{table*}[htbp]
+\caption{The results of Kamei et al.\cite{kamei2012large} and {\simfinmo}}
+\begin{center}
+\resizebox{\textwidth}{!}{% 
+\begin{tabular}{|c||c|c|c|c|c|c||c|c||c|c|c|c|c|c||c|c||c|c|c|c|c|c||c|c|}
+\hline
+
+% \multicolumn{2}{c}{\multirow{1}{*}{Project} & \multicolumn{7}{C}{Precision}} \\
+% \cline{2-9} \multicolumn{2}{c}{} & BN & NB & RF	& LMT & J48 & IBk & Simfin \\
+\multirow{2}{*}{Project Name} & \multicolumn{8}{c||}{Precision} & \multicolumn{8}{c||}{Recall} & \multicolumn{8}{c|}{F-measure} \\
+\cline{2-25}
+& BN & NB & RF	& LMT & J48 & IBk & SimFinMo & Partial (1) & BN & NB & RF	& LMT & J48 & IBk & SimFinMo & Partial (1) & BN & NB & RF	& LMT & J48 & IBk & SimFinMo & Partial (1)\\
+\hline
+\hline
+jena&0.080&0.025&0.685&0.500&0.647&0.190&0.024&0.016&0.436&0.603&0.107&0.034&0.024&0.178&0.446&0.612&0.135&0.047&0.186&0.064&0.046&0.184&0.046&0.031\\ \hline
+maven&0.310&0.105&0.561&-&0.365&0.215&0.143&0.112&0.031&0.672&0.056&0.000&0.031&0.216&0.778&0.695&0.057&0.182&0.101&-&0.058&0.215&0.242&0.193\\ \hline
+ranger&0.358&0.159&0.596&0.541&0.518&0.286&0.269&0.136&0.087&0.481&0.096&0.028&0.083&0.278&0.664&0.678&0.141&0.239&0.165&0.054&0.143&0.282&0.383&0.226\\ \hline
+sentry&-&0.115&0.421&-&0.333&0.224&0.218&0.129&0.000&0.125&0.030&0.000&0.004&0.211&0.725&0.691&-&0.120&0.056&-&0.007&0.217&0.335&0.217\\ \hline
+sqoop&0.104&0.053&0.800&0.286&-&0.149&0.035&0.028&0.275&0.846&0.088&0.022&0.000&0.143&0.659&0.703&0.151&0.099&0.158&0.041&-&0.146&0.066&0.055\\ \hline
+syncope&0.478&0.097&0.538&-&-&0.210&0.124&0.059&0.009&0.058&0.061&0.000&0.000&0.193&0.681&0.680&0.017&0.073&0.110&-&-&0.201&0.210&0.108\\ \hline
+tez&0.335&0.209&0.675&0.561&0.481&0.394&0.278&0.166&0.137&0.572&0.226&0.081&0.259&0.380&0.675&0.670&0.195&0.306&0.339&0.141&0.337&0.387&0.394&0.266\\ \hline
+\hline
+Average Rank & 5.571&6.857&2.000&5.429&4.857&5.000&6.143&7.857&6.714&4.000&6.286&8.429&7.714&5.000&2.714&2.714&6.286&5.286&4.000&8.000&7.286&3.000&3.143&5.714\\ \hline
+\hline
+\end{tabular}}
+\end{center}
+\label{tab:results}
+\end{table*}
+
+
+
+
+% Table RQ2.
+\begin{table}[htbp]
+\caption{This table shows different performance metrics using different cut-off values.
+The following result is from the project ranger. }
+\centering
+% \resizebox{\linewidth}{!}{%
+\begin{tabular}{|c|c|c|c|}
+\hline
+\hline
+Cutoff Value & Precision & Recall & F-measure \\ \hline \hline
+0.000001 & 0.85714286 & 0.00846262 & 0.01675978 \\ \hline
+0.1 & 0.79166667 & 0.02679831 & 0.05184175 \\ \hline
+0.2 & 0.52027027 & 0.10860367 & 0.17969662 \\ \hline
+0.3 & 0.38945233 & 0.27080395 & 0.31946755 \\ \hline
+0.4 & 0.33103448 & 0.40620592 & 0.36478784 \\ \hline
+0.5 & 0.294635 & 0.47249647 & 0.36294691 \\ \hline
+0.6 & 0.28164794 & 0.5303244 & 0.36790607 \\ \hline
+0.7 & 0.27102804 & 0.57263752 & 0.36792025 \\ \hline
+0.8 & 0.26918239 & 0.60366714 & 0.3723358 \\ \hline
+0.9 & 0.26666667 & 0.63187588 & 0.37505232 \\ \hline
+1 & 0.26868226 & 0.66431594 & 0.38261576 \\ \hline
+2 & 0.23634812 & 0.78138223 & 0.36292172 \\ \hline
+3 & 0.22235112 & 0.81100141 & 0.34901366 \\ \hline
+4 & 0.21674694 & 0.82510578 & 0.34330986 \\ \hline
+5 & 0.21528525 & 0.84626234 & 0.34324943 \\ \hline
+6 & 0.21344011 & 0.86459803 & 0.34236247 \\ \hline
+7 & 0.2122449 & 0.88011283 & 0.34201151 \\ \hline
+8 & 0.21022727 & 0.88716502 & 0.33990813 \\ \hline
+9 & 0.20771513 & 0.88857546 & 0.33671833 \\ \hline
+10 & 0.20715693 & 0.8899859 & 0.33608522 \\ \hline \hline
+\end{tabular}%
+% }
+\label{tab:rq_2}
+\end{table}

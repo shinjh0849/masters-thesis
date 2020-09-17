@@ -1,0 +1,82 @@
+\section{Experimental Setup}
+This section explains about the settings of the experiment that is conducted in this study.
+
+\subsection{Research Questions}
+To evaluate the {\simfinmo} in defect prediction, we have defined two research questions.
+
+\begin{itemize}
+    \item RQ1: Is {\simfinmo} comparable to various machine learners in defect prediction?
+    \item RQ2: What are the impact of various {\simfinmo} cutoffs in terms of prediction performance?
+\end{itemize}
+
+From answering the research questions, we aim to investigate the effectiveness of {\simfinmo} by comparing the prediction performance with the existing baseline and to show different aspects of {\simfinmo} in using different cut-off values.
+
+\subsection{Dataset}
+We used 133 active, Java projects in the Apache foundation to construct {\simfin}.
+This number corresponds to the number of projects with active GitHub or JIRA issue tracking system.
+%Whether projects that use JIRA issue tracking system is important for us because the data quality of BIC which is retrieved from Bug Patch Collector could be low if we do not use the label from the issue tracking system.
+%When the Bug Patch Collector is applied on projects that are not managed by issue tracking system, it will retrieve BIC by looking for keywords such as ``bug'' or ``fix'' which is a very naive approach with high potential of false positives.
+We have collected 133 projects and the total number of BIC collected is 44K instances and 1M of clean instances for the training data to build {\simfin}.
+
+To evaluate {\simfinmo}, we compared it with typical JIT DP models thus we chose test data by considering JIT DP models. Table \ref{tab:test_project} shows the details of the test project. The test set used are also from Apache projects. These test projects were selected by considering various buggy ratios and the different number of commits.
+%\jh{was there any reason why we used the 7 projects as test projects? was it the ones that Kamei used?}
+JIT DP conducted in a commit level still remains as very challenging to achieve high prediction performance. One of reasons is that the number of buggy commits is significantly smaller than that of clean commits. This ratios is affected by the total number of commits of a project. Thus, for our test data, we randomly choose seven projects by considering various buggy ratios and the different number of commits.
+
+As explained in the approach section, the two {\simfin} models are trained by the BIC instances or clean instances.
+For the test set, we also use both buggy and clean instances for the prediction scenario.
+Since we choose the seven test projects from the 133 ASF projects, we ignore the `same' change found as similar by {\simfin}. By doing this, we can ignore the occurrence of the model predicting the closest commit as the ground truth.
+
+\begin{table}[htbp]
+\caption{The list of project used as a test set}
+\centering
+% \resizebox{\linewidth}{!}{%
+\begin{tabular}{|l|l|l|l|}
+\hline
+Name & \# of Buggy & \# of Clean & Total \\ \hline
+jena & 466 (1.1\%) & 43867 (98.9\%) & 44333 \\ \hline
+maven & 988 (9.2\%) & 10786 (90.8\%) & 11774 \\ \hline
+ranger & 709 (12.2\%) & 5810 (87.8\%) & 6519 \\ \hline
+sentry & 265 (10.8\%) & 2446 (89.2\%) & 2711 \\ \hline
+sqoop & 91 (2.2\%) & 4204 (97.8\%) & 4295 \\ \hline
+syncope & 1254 (4.6\%) & 26415 (95.4\%) & 27669 \\ \hline
+tez & 1091 (16.5\%) & 6629 (83.5\%) & 7720 \\ \hline
+median & 709 (9.2\%) & 6629 (90.8\%) &  7720\\ \hline
+\end{tabular}%
+% }
+\newline
+\label{tab:test_project}
+\end{table}
+
+\subsection{Baseline}
+The baseline we use to compare the prediction performance is a typical JIT defect prediction model from Kamei et al.\cite{kamei2012large}.
+%The typical JIT defect prediction data is labeled using the SZZ algorithm \cite{sliwerski2005changes}.
+
+We used 13 out of 14 metrics of Kamei et al.~\cite{kamei2012large} used. We did not use Developer experience on a subsystem(SEXP) metric because Kamei\cite{kamei2012large} builds on CVS that is centralized version control system, but projects in our experiment are based on git that distributed version control system.
+For this reason, we didn't consider a subsystem. The metric type is classified five dimensions that are diffusion, size, purpose, history and experience.
+
+\textbf{Diffusion dimension} is figure of a distributed change. A distributed change can be measured by counting the component of source files. There are four features that are Number of modified subsystems(NS), Number of modified Directories(ND), Number of modified files(NF) and distribution of modified code(Entropy). We change subsystem of NS to package in Java. For example, There are three source files change in a commit. One is java/src/clami/main.java, another is java/src/clami/utils.java and the other is java/src/city/cat.java. Then, NS is 1 (i.e., java/src/), ND is 2 (i.e., clami/ and city/) and NF is 3 (i.e., main.java, cat.java and utils.java). Entropy counts the distribution of modified lines in the source files. \textbf{Size dimension} is number of lines in a source file. Lines of code added(LA), Lines of code deleted(LD) and Lines of code in a file before change(LT) exist. \textbf{Purpose dimension} has one feature that FIX. FIX is a label of each source file in a commit and the value is buggy or clean.
+\textbf{History dimension} is about the revision history of source changes from the past to the present. NDEV is the number of unique developers who have modified a source file. AGE is the interval between the current source file time and the most recently modified time. NUC is the number of unique changes in a commit. For example there are four source files in a commit that are A, B, C and D. File A and B had been modified at $\alpha$ commit, file C had been modified at $\beta$ commit and file D had been modified at $\gamma$ commit. In this case, NUC is 3 (i.e., $\alpha$, $\beta$ and $\gamma$). 
+The last dimension is \textbf{Experience dimension} that is the information of developer in the project. The developer who frequently participate in the project is less likely to cause defects because the developer understand the project well. Experience dimension has two factor : Developer experience(EXP) and Recent developer experience(REXP). EXP is the total number of commits the developer has created. REXP is the number of commits that have been weighted according to the year the developer participated in. A developer, for example, created one commit in 2017, three commit in 2018 and two commit in 2020. REXP in 2020 is 3.25 (i.e., $\frac{2}{1} + \frac{3}{3}  + \frac{1}{4}$), and REXP in 2021 is 1.95 (i.e., $\frac{2}{2} + \frac{3}{4}  + \frac{1}{5}$).
+
+We use 10-fold validation to Kamei metrics for performance evaluation[]. The data set is divided into 10 sets. The 9 sets is training set that are used to make machine learning models, the other set is test set that is used to verify the performance of machine learning models.
+
+
+\subsubsection{Evaluation Metrics}
+The evaluation metrics for comparing {\simfinmo} and baseline are precision, recall and F-measure. We used a variety of evaluation metrics to assess a sound experiment and show various aspect of the predictors. Confusion matrix is needed to evaluation two models. There are four metrics as shown table \ref{tab:Confusion} : True Positive(TP) is that the real label is true and the model predicts true. False positive(FP) is the real label is false but the model predicts true. False Negative(FN) is the real label is true but the model predicts false. True Negative(TN) is the real label is false and the model predicts true. Precision is value of positive predictive that is the correct percentage of bugs among predicted bugs ($Precision = \frac{TP}{TP + FP}$) and recall is hit rate that is the percentage of predicted bugs among actual bugs ($Recall = \frac{TP}{TP + FN}$). F-measure is the harmonic mean of the precision and recall ($F1-measure = 2 \times \frac{Precision \times Recall}{Precision + Recall}$). 
+
+% MCC is matthews correlation coefficient that is a measure used in unbalanced labels ($MCC = \frac{TP \times TN - FP \times FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}$. AUC is good for comparing the performance of different models. 
+
+\begin{table}[htbp]
+\caption{Confusion matrix}
+\centering
+% \resizebox{\linewidth}{!}{%
+\begin{tabular}{|c|c|c|}\hline
+
+\backslashbox{Actual}{Predicted} &Buggy&Clean\\ \hline
+Buggy & True Positive & False Positive \\ \hline
+Clean & False Negative & True Negative \\ \hline
+\end{tabular}%
+% }
+\newline
+\label{tab:Confusion}
+\end{table}

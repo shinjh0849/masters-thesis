@@ -1,0 +1,26 @@
+\newcommand{\todoc}[2]{{\textcolor{#1}{\textbf{[[#2]]}}}}
+\newcommand{\todobrown}[1]{\todoc{brown}{\textbf{[[#1]]}}}
+\newcommand{\todoblue}[1]{\todoc{blue}{\textbf{[[#1]]}}}
+\newcommand{\todoorange}[1]{\todoc{cyan}{\textbf{[[#1]]}}}
+\newcommand{\todored}[1]{\todoc{red}{\textbf{[[#1]]}}}
+
+\newcommand{\todo}[1]{\todored{TODO: #1}}
+\newcommand{\jc}[1]{\todobrown{JC: #1}}
+\newcommand{\jh}[1]{\todoblue{JH: #1}}
+\newcommand{\sj}[1]{\todoblue{SJ: #1}}
+
+\newcommand{\simfin}{\texttt{SimFin}}
+\newcommand{\simfinmo}{\texttt{SimFinMo}}
+\newcommand{\SimFin}{\texttt{SimFin}}
+\newcommand{\SimFinMo}{\texttt{SimFinMo}}
+
+\usepackage{tcolorbox}
+\makeatletter
+\newcommand{\mybox}[1]{%
+	\setbox0=\hbox{#1}%
+	\setlength{\@tempdima}{\dimexpr\wd0+13pt}%
+	\begin{tcolorbox}[boxrule=0.5pt, colback=white, arc=4pt,
+		left=6pt,right=6pt,top=6pt,bottom=6pt,boxsep=0pt]
+		#1
+	\end{tcolorbox}
+}

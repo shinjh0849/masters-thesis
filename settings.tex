@@ -1,0 +1,105 @@
+% originally by Sangchul Hahn, and revised by H. Choi
+
+\usepackage{graphicx}  %for images and plots
+\usepackage[papersize={19.3cm, 26.5cm}]{geometry}
+\usepackage{setspace}  %use this package to set linespacing as desired
+\usepackage{times}  %set Times New Roman as the font
+\usepackage[explicit]{titlesec}  %title control and formatting
+\usepackage[titles]{tocloft}  %table of contents control and formatting
+\usepackage[backend=bibtex, sorting=nty, bibstyle=ieee]{biblatex} 
+\usepackage[bookmarks=true, hidelinks]{hyperref}
+\usepackage[page]{appendix}  %for appendices
+\usepackage{rotating}  %for rotated, landscape images
+\usepackage[normalem]{ulem}  %for italicized text
+\usepackage{amsfonts}
+\usepackage{kotex}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{chngcntr}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{enumerate}
+\usepackage{tikz}
+
+\input{math_commands.tex}
+
+\usepackage{url}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+
+\graphicspath{{figures/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
+\bibliography{references}
+
+% prevent certain fields in references from printing in bibliography
+\AtEveryBibitem{\clearfield{issn}}
+\AtEveryBibitem{\clearlist{issn}}
+
+\AtEveryBibitem{\clearfield{language}}
+\AtEveryBibitem{\clearlist{language}}
+
+\AtEveryBibitem{\clearfield{doi}}
+\AtEveryBibitem{\clearlist{doi}}
+
+\AtEveryBibitem{\clearfield{url}}
+\AtEveryBibitem{\clearlist{url}}
+
+\AtEveryBibitem{%
+  \ifentrytype{online}
+    {}
+    {\clearfield{urlyear}\clearfield{urlmonth}\clearfield{urlday}}}
+
+
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\counterwithout{equation}{chapter}
+
+
+\pagenumbering{arabic}
+\setcounter{page}{1} % set the page number appropriately
+
+% Adjust chapter title formatting
+\titleformat{\chapter}[hang]
+{\centering\Large} % format
+{\thechapter. #1} % label
+{0.1em}{}
+
+\titleformat{\section}[hang]
+{\normalfont}
+{\thesection. #1}{0.5em}{}
+
+\titleformat{\subsection}[hang]
+{\normalfont}
+{\thesubsection. #1}{0.5em}{}
+
+\mainmatter
+\pagestyle{fancy}
+\renewcommand\headrulewidth{0pt}
+\lhead{}\chead{}\rhead{}
+\cfoot{\vspace*{1.5\baselineskip}-\thepage-}
+
+\graphicspath{{figures/}}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+
+\clearpage
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}%
+    {\par\vspace{\baselineskip}}{}{}
+\makeatother
+\titlespacing*{\chapter}{0mm}{0em}{0em}

@@ -1,0 +1,39 @@
+\BOOKMARK [0][-]{Title Page.0}{Title Page}{}% 1
+\BOOKMARK [0][-]{Doc-Start}{Abstract}{}% 2
+\BOOKMARK [0][-]{Contents.0}{Table of Contents}{}% 3
+\BOOKMARK [0][-]{chapter*.2}{List of Figures}{}% 4
+\BOOKMARK [0][-]{chapter*.3}{List of Tables}{}% 5
+\BOOKMARK [0][-]{chapter*.4}{Chapter One}{}% 6
+\BOOKMARK [1][-]{section.0.1}{Introduction}{chapter*.4}% 7
+\BOOKMARK [0][-]{chapter*.5}{Chapter Two}{}% 8
+\BOOKMARK [1][-]{section.0.2}{Related Work}{chapter*.5}% 9
+\BOOKMARK [2][-]{subsection.0.2.1}{Similar Commit Search}{section.0.2}% 10
+\BOOKMARK [2][-]{subsection.0.2.2}{Defect Prediction}{section.0.2}% 11
+\BOOKMARK [0][-]{chapter*.13}{Chapter Three}{}% 12
+\BOOKMARK [1][-]{section.0.3}{Approach}{chapter*.13}% 13
+\BOOKMARK [2][-]{subsection.0.3.1}{Collecting Bug Inducing Changes}{section.0.3}% 14
+\BOOKMARK [2][-]{subsection.0.3.2}{Collecting Change Vectors}{section.0.3}% 15
+\BOOKMARK [2][-]{subsection.0.3.3}{SimFin: Similar Commit Change Finder}{section.0.3}% 16
+\BOOKMARK [2][-]{subsection.0.3.4}{Prediction}{section.0.3}% 17
+\BOOKMARK [0][-]{chapter*.16}{Chapter Four}{}% 18
+\BOOKMARK [1][-]{section.0.4}{Experimental Setup}{chapter*.16}% 19
+\BOOKMARK [2][-]{subsection.0.4.1}{Research Questions}{section.0.4}% 20
+\BOOKMARK [2][-]{subsection.0.4.2}{Dataset}{section.0.4}% 21
+\BOOKMARK [2][-]{subsection.0.4.3}{Baseline}{section.0.4}% 22
+\BOOKMARK [0][-]{chapter*.18}{Chapter Five}{}% 23
+\BOOKMARK [1][-]{section.0.5}{Experiment Results}{chapter*.18}% 24
+\BOOKMARK [2][-]{subsection.0.5.1}{RQ1: Is SimFinMo comparable to various machine learners?}{section.0.5}% 25
+\BOOKMARK [2][-]{subsection.0.5.2}{RQ2: What are the impact of various SimFinMo cutoffs in terms of prediction performance?}{section.0.5}% 26
+\BOOKMARK [2][-]{subsection.0.5.3}{Analysis}{section.0.5}% 27
+\BOOKMARK [0][-]{chapter*.19}{Chapter Six}{}% 28
+\BOOKMARK [1][-]{section.0.6}{Discussion}{chapter*.19}% 29
+\BOOKMARK [2][-]{subsection.0.6.1}{Importance of this Approach}{section.0.6}% 30
+\BOOKMARK [2][-]{subsection.0.6.2}{Future Work}{section.0.6}% 31
+\BOOKMARK [0][-]{chapter*.20}{Chapter Seven}{}% 32
+\BOOKMARK [1][-]{section.0.7}{Threats to Validity}{chapter*.20}% 33
+\BOOKMARK [2][-]{subsection.0.7.1}{Construct Validity}{section.0.7}% 34
+\BOOKMARK [2][-]{subsection.0.7.2}{External Validity}{section.0.7}% 35
+\BOOKMARK [2][-]{subsection.0.7.3}{Internal Validity}{section.0.7}% 36
+\BOOKMARK [1][-]{section.0.8}{Conclusion}{chapter*.20}% 37
+\BOOKMARK [0][-]{chapter*.21}{References}{}% 38
+\BOOKMARK [0][-]{chapter*.23}{Acknowledgement}{}% 39
