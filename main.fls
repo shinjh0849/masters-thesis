@@ -1,9 +1,9 @@
-PWD /Users/jihoshin/Documents/2019-4/Master thesis
+PWD /Users/jihoshin/Documents/2019-4/masters-thesis
 INPUT /usr/local/texlive/2018/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.tex
-OUTPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.log
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.tex
+OUTPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.log
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/bk11.clo
@@ -90,8 +90,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/settings.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/settings.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/settings.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/settings.tex
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
@@ -301,8 +301,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplo
 INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/math_commands.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/math_commands.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/math_commands.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/math_commands.tex
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tools/bm.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tools/bm.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
@@ -325,8 +325,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/macro.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/macro.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/macro.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/macro.tex
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/tools/verbatim.sty
@@ -337,9 +337,9 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.aux
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.aux
-OUTPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.aux
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.aux
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.aux
+OUTPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.aux
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
@@ -355,28 +355,28 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-OUTPUT /Users/jihoshin/Documents/2019-4/Master thesis/main-blx.bib
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.bbl
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.bbl
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.bbl
+OUTPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main-blx.bib
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.bbl
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.bbl
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.bbl
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.out
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.out
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.out
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.out
-OUTPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.pdf
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.out
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.out
-OUTPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.out
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.out
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.out
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.out
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.out
+OUTPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.pdf
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.out
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.out
+OUTPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.out
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-ptm.cfg
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/config.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/config.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/titlepages.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/titlepages.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/config.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/config.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/titlepages.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/titlepages.tex
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
@@ -400,17 +400,17 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc6.
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/signature.png
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/signature.png
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/signature.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/signature.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/signature.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/signature.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/signature.png
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/signature.png
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/signature.png
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/signature.png
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/signature.png
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/signature.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/signature.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/signature.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/signature.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/signature.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/signature.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/signature.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc2.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc9.tfm
@@ -425,21 +425,57 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmad.
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc6.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/abstract.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/abstract.tex
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcd.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb8.tfm
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/abstract.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/abstract.tex
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmac.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd5.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmae.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc7.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc5.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb1.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc1.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc6.tfm
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/contents.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/contents.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.toc
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.toc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmce.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc5.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmad.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb2.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc9.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb0.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc2.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb1.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb3.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbc.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb4.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmae.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmba.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbd.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcf.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd0.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd2.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbb.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc1.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcc.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbe.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb9.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb5.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc0.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/uhc/uwmj/uwmj31.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd3.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcd.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc3.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/uhc/uwmj/uwmj31.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/uhc/wmj/wmj04.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/uhc/wmj/wmj04.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/uhc/umj/umj05.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/uhc/umj/umj02.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/uhc/umj/umj03.tfm
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/contents.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/contents.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.toc
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.toc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -484,55 +520,55 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
-OUTPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.toc
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.lof
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.lof
-OUTPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.lof
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.lot
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.lot
-OUTPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.lot
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/chapters.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/chapters.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/1_intoduction.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/1_intoduction.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/2_related_work.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/2_related_work.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/3_approach.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/3_approach.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/approach_fig.pdf
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/approach_fig.pdf
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/approach_fig.pdf
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/4_experimental_setup.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/4_experimental_setup.tex
+OUTPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.toc
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.lof
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.lof
+OUTPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.lof
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.lot
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.lot
+OUTPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.lot
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/chapters.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/chapters.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/1_intoduction.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/1_intoduction.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/2_related_work.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/2_related_work.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/3_approach.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/3_approach.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/approach_fig.pdf
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/approach_fig.pdf
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/approach_fig.pdf
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/4_experimental_setup.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/4_experimental_setup.tex
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/5_experiment_results.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/5_experiment_results.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/6_discussions.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/6_discussions.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/patchsuggstion_ex1.pdf
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/patchsuggstion_ex1.pdf
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/patchsuggstion_ex1.pdf
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/patchsuggstion_ex2.pdf
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/patchsuggstion_ex2.pdf
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/figures/patchsuggstion_ex2.pdf
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/7_conclusion.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/sections/7_conclusion.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/5_experiment_results.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/5_experiment_results.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/6_discussions.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/6_discussions.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/patchsuggstion_ex1.pdf
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/patchsuggstion_ex1.pdf
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/patchsuggstion_ex1.pdf
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/patchsuggstion_ex2.pdf
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/patchsuggstion_ex2.pdf
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/patchsuggstion_ex2.pdf
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/7_conclusion.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/7_conclusion.tex
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmrc8t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmrc8t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/acknowledge.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/acknowledge.tex
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.aux
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.out
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.out
-INPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.run.xml
-OUTPUT /Users/jihoshin/Documents/2019-4/Master thesis/main.run.xml
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/acknowledge.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/acknowledge.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.aux
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.out
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.out
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.run.xml
+OUTPUT /Users/jihoshin/Documents/2019-4/masters-thesis/main.run.xml
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
@@ -543,22 +579,41 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/uhc/umj/umj02.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb

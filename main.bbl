@@ -1173,6 +1173,46 @@
     \field{year}{2018}
   \endentry
 
+  \entry{schein2002methods}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SAI}{%
+         family={Schein},
+         familyi={S\bibinitperiod},
+         given={Andrew\bibnamedelima I},
+         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Popescul},
+         familyi={P\bibinitperiod},
+         given={Alexandrin},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ULH}{%
+         family={Ungar},
+         familyi={U\bibinitperiod},
+         given={Lyle\bibnamedelima H},
+         giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=PDM}{%
+         family={Pennock},
+         familyi={P\bibinitperiod},
+         given={David\bibnamedelima M},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SAIPAULHPDM1}
+    \strng{fullhash}{SAIPAULHPDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the 25th annual international ACM SIGIR
+  conference on Research and development in information retrieval}
+    \field{pages}{253\bibrangedash 260}
+    \field{title}{Methods and metrics for cold-start recommendations}
+    \field{year}{2002}
+  \endentry
+
   \entry{sliwerski2005changes}{article}{}
     \name{author}{3}{}{%
       {{hash=SJ}{%

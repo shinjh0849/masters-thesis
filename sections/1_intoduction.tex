@@ -13,7 +13,7 @@ With finer granularity of prediction, researchers aim to provide `practical' def
 However, the finer granularity doesn't really solve the problem, because if the commit gets too big, the same problem occurs. In addition, the approach does still not explain why the commit is causing the problem as well. In other words, the models do not provide actionable messages for the bug-prone changes.
 
 The second problem of traditional defect prediction models is the cold-start problem. 
-A cold-start problem occurs when the target system lacks a history of data. 
+A cold-start problem occurs when the target system lacks a history of data \cite{schein2002methods}. 
 Because defect prediction models are built with previous versions of the target system, it is impossible to apply on projects that are just being started.
 To alleviate this problem, the study of cross-project defect prediction (CPDP) and heterogeneous defect prediction (HDP) got popular. 
 CPDP enables defect prediction to be applied to newly starting projects because the prediction models are made from other (cross-project) existing projects.
@@ -23,19 +23,19 @@ So the development of HDP increases the range of projects that could be used as 
 However, CPDP and HDP do not fully alleviate the cold-start problem in the JIT settings because the metrics need a certain degree of historical data, i.e. the time spent after the last commit (AGE), the number of developers that contributed to the commit (NDEV), the number of unique changes in the commit (NUC) in \cite{kamei2012large}.
 
 The last problem we want to mention is the class imbalance problem.
-Class imbalance problem is when a certain class of a label outweighs other classes in amount.
+Class imbalance problem is when a certain class of a label outweighs other classes in numbers.
 This is very common in defect prediction scenarios because it is very hard to label modules of code as buggy.
 Due to the lack of label information and imbalance of class, machine learning models suffer to correctly learn and predict buggy instances.
 
 To resolve these issues, we propose a new paradigm of defect prediction.
 The basic idea of our approach is to search the target change from a pool of bug inducing changes (BIC) in existing repositories and use the distance value of the search to identify the target change as buggy or clean.
 We call this model that searches for similar change as {\simfin} (\underline{Sim}ilar commit change \underline{Fin}der).
-{\simfin} is an auto encoder-decoder model that is learnt from a collection of buggy and clean changes in the existing repositories. By using {\simfin}, we devised {\simfinmo}, \underline{\simfin}-based defect prediction \underline{Mo}del. The intuition of {\simfin} is as follows.
+{\simfin} is an auto encoder-decoder model that is learnt from a collection of buggy and clean changes in the existing repositories. By using {\simfin}, we devised {\simfinmo}, a \underline{\simfin}-based defect prediction \underline{Mo}del. The intuition of {\simfin} is as follows.
 If the target change we want to predict is very similar to our searched change (with the lowest distance value, i.e. the closest change existing in a repository), it is most likely to be a buggy change.
 If the target change is very different from our searched change, then it is more likely to be a clean change. 
-Our approach is very novel, because in the prediction phase, we do not apply any machine learning algorithm as opposed to other existing defect prediction models. In addition, we do not need a certain period of history data to collect metrics for test data.
-To predict, {\simfinmo} simply look if the distance ratio of the searched buggy and clean changes to the target change is higher than the cutoff value or not.
-With this approach, we could alleviate all the aforementioned limitation of defect prediction.
+Our approach is very novel because, in the prediction phase, we do not apply any machine learning algorithm as opposed to other existing defect prediction models. In addition, we do not need a certain period of historical data to collect metrics for test data.
+To predict, {\simfinmo} simply looks if the distance ratio of the searched buggy and clean changes to the target change is higher than the cutoff value or not.
+With this approach, we could alleviate all the aforementioned limitations of defect prediction.
 
 \vspace{3mm}
 The contributions of our work is that:
