@@ -1,27 +1,16 @@
 % originally by Sangchul Hahn, and revised by H. Choi
 
 \documentclass[11pt, oneside]{book}   %12 point font for Times New Roman
-\usepackage{amsmath,amssymb,amsfonts}
-\usepackage{algorithmic}
-\usepackage{graphicx}
-\usepackage{textcomp}
-\usepackage{hhline}
-\usepackage{xcolor}
-\usepackage{multirow}
-\usepackage{diagbox}
 \input{settings.tex}
-\input{macro.tex}
+\input{config.tex}      % Change! user and thesis information
 %%%%%%%%%%%%%%%%%%%%%%
 % Start of Document
 \begin{document}
 \frontmatter
-
-\input{config.tex}     % Change! user and thesis information
-
-\input{titlepages.tex} % Don't touch! Title Pages
-\input{abstract.tex}   % Change! Abstract Page
-\input{contents.tex}   % Don't touch! Table of Contents, figures and tables
-\input{chapters.tex}   % Change! Chapters including references
-\input{acknowledge.tex}% Change! Acknowledgement
+\input{titlepages.tex}  % Don't touch! Title Pages
+\input{abstract.tex}    % Change! Abstract Page
+\input{contents.tex}    % Don't touch! Table of Contents, figures and tables
+\input{chapters.tex}    % Change! Chapters including references
+\input{acknowledge.tex} % Change! Acknowledgement
 
 \end{document}

@@ -1,5 +1,4 @@
 \section{Threats to Validity}
-
 \subsection{Construct Validity}
 In collecting the change vectors, we have disregarded updates and move operations from the changes due to occurrence of simple refactoring changes with no actual behavioral changes.
 However, this may lead in missing some real important changes such as changing the a method invocation to complete another method invocation or moving an if statement to next line to change the control flow of the program.
@@ -17,9 +16,3 @@ Although the algorithm is often used to collect BIC instances, it has limitation
 The deleted lines from the BFC that are blamed to trace BIC are not always bug inducing as they could be refactoring or cosmetic changes \cite{neto2018impact}.
 However, with the circumstances, {\simfinmo} showed comparable or better performance to the existing baselines.
 So we believe that with the better algorithm that has better precision in BIC instance collecting will improve the performance of {\simfinmo}.
-
-\section{Conclusion}
-In conclusion, we have proposed a novel approach for a universal actionable defect prediction model that resolves the biggest limitation of current defect prediction model such as cold-start problem and lack of actionable messages.
-This study is the first of a kind that tackles to predict defective modules in change level without a machine learning predictor. 
-Although the suggested {\simfinmo}, has relatively low prediction performance we believe more studies of this direction will contribute to automated quality assurance techniques, such as defect prediction and automatic program repair.
-More related studies such as finding a better solution for setting the cut-off value and a way of collecting higher quality of defect and useful clean changes will enhance the prediction performance to contribute in better actionable messages.

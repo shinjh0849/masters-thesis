@@ -1,12 +1,5 @@
 % originally by Sangchul Hahn, and revised by H. Choi
 
-\clearpage
-\makeatletter
-\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}%
-    {\par\vspace{\baselineskip}}{}{}
-\makeatother
-\titlespacing*{\chapter}{0mm}{0em}{0em}
-
 % Format for Table of Contents
 \renewcommand{\cftchapdotsep}{\cftdotsep}  %add dot separators
 \renewcommand{\cftchapfont}{\normalsize}  %set title font weight
@@ -14,10 +7,6 @@
 \renewcommand{\cftchapaftersnum}{.}
 \renewcommand{\cftsecaftersnum}{.}
 \renewcommand{\contentsname}{\hfill \fontsize{14}{20} \selectfont CONTENTS \hfill}
-
-%format title font size and position (this also applys to list of figures and list of tables)
-\titleformat{\chapter}[display]
-{\fontsize{14}{20}}{\thechapter}{0pt}{\hfill\selectfont#1\hfill}
 
 % ToC
 \currentpdfbookmark{Table of Contents}{Contents}

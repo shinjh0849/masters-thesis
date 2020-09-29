@@ -1,44 +1,48 @@
 % originally by Sangchul Hahn, and revised by H. Choi
-
-\usepackage{graphicx}  %for images and plots
-\usepackage[papersize={19.3cm, 26.5cm}]{geometry}
-\usepackage{setspace}  %use this package to set linespacing as desired
-\usepackage{times}  %set Times New Roman as the font
-\usepackage[explicit]{titlesec}  %title control and formatting
-\usepackage[titles]{tocloft}  %table of contents control and formatting
 \usepackage[backend=bibtex, sorting=nty, bibstyle=ieee]{biblatex} 
 \usepackage[bookmarks=true, hidelinks]{hyperref}
-\usepackage[page]{appendix}  %for appendices
-\usepackage{rotating}  %for rotated, landscape images
+\usepackage[explicit]{titlesec}  %title control and formatting
 \usepackage[normalem]{ulem}  %for italicized text
-\usepackage{amsfonts}
+\usepackage[page]{appendix}  %for appendices
+\usepackage[papersize={19.3cm, 26.5cm}]{geometry}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage[titles]{tocloft}  %table of contents control and formatting
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage{algorithmic}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{chngcntr}
+\usepackage{diagbox}
+\usepackage{enumerate}
+\usepackage{etoolbox}
+\usepackage{fancyhdr}
+\usepackage{graphicx}  %for images and plots
+\usepackage{hhline}
+\usepackage{indentfirst}
 \usepackage{kotex}
 \usepackage{lastpage}
-\usepackage{fancyhdr}
-\usepackage{indentfirst}
-\usepackage{chngcntr}
-\usepackage[ruled,vlined]{algorithm2e}
-\usepackage{enumerate}
-\usepackage{tikz}
-
-\input{math_commands.tex}
-
-\usepackage{url}
-\usepackage[utf8]{inputenc} % allow utf-8 input
-\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
-\usepackage{booktabs}       % professional-quality tables
-\usepackage{amsfonts}       % blackboard math symbols
-\usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
-\usepackage{amsmath}
-\usepackage{xspace}
-\usepackage{tabularx}
 \usepackage{multicol}
 \usepackage{multirow}
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{rotating}  %for rotated, landscape images
+\usepackage{setspace}  %use this package to set linespacing as desired
+\usepackage{tabularx}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usepackage{times}  %set Times New Roman as the font
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{xspace}
 
-\renewcommand{\thechapter}{\Roman{chapter}}
-\renewcommand{\thesection}{\arabic{section}}
-\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\input{math_commands.tex}
+\input{macro.tex}
+
+\renewcommand{\thechapter}{\arabic{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
 
 \graphicspath{{figures/}}
 
@@ -87,11 +91,10 @@
 {\normalfont}
 {\thesubsection. #1}{0.5em}{}
 
-\mainmatter
 \pagestyle{fancy}
 \renewcommand\headrulewidth{0pt}
 \lhead{}\chead{}\rhead{}
-\cfoot{\vspace*{1.5\baselineskip}-\thepage-}
+\cfoot{\vspace*{1.5\baselineskip}\thepage}
 
 \graphicspath{{figures/}}
 \renewcommand{\thefigure}{\arabic{figure}}
@@ -99,7 +102,7 @@
 
 \clearpage
 \makeatletter
-\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}%
-    {\par\vspace{\baselineskip}}{}{}
+\patchcmd{\l@chapter}{1.5em}{2.3em}{}{}
+\patchcmd{\l@section}{{1.5em}{2.3em}}{{2.3em}{2.3em}}{}{}
 \makeatother
 \titlespacing*{\chapter}{0mm}{0em}{0em}

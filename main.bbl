@@ -17,6 +17,170 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{ali2009systematic}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AS}{%
+         family={Ali},
+         familyi={A\bibinitperiod},
+         given={Shaukat},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BLC}{%
+         family={Briand},
+         familyi={B\bibinitperiod},
+         given={Lionel\bibnamedelima C},
+         giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=HH}{%
+         family={Hemmati},
+         familyi={H\bibinitperiod},
+         given={Hadi},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=PWRK}{%
+         family={Panesar-Walawege},
+         familyi={P\bibinitperiod-W\bibinitperiod},
+         given={Rajwinder\bibnamedelima Kaur},
+         giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ASBLCHHPWRK1}
+    \strng{fullhash}{ASBLCHHPWRK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{6}
+    \field{pages}{742\bibrangedash 762}
+    \field{title}{A systematic review of the application and empirical
+  investigation of search-based test case generation}
+    \field{volume}{36}
+    \field{journaltitle}{IEEE Transactions on Software Engineering}
+    \field{year}{2009}
+  \endentry
+
+  \entry{anand2013orchestrated}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=AS}{%
+         family={Anand},
+         familyi={A\bibinitperiod},
+         given={Saswat},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BEK}{%
+         family={Burke},
+         familyi={B\bibinitperiod},
+         given={Edmund\bibnamedelima K},
+         giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=CTY}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Tsong\bibnamedelima Yueh},
+         giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CMB}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Myra\bibnamedelima B},
+         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=GW}{%
+         family={Grieskamp},
+         familyi={G\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Harman},
+         familyi={H\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HMJ}{%
+         family={Harrold},
+         familyi={H\bibinitperiod},
+         given={Mary\bibnamedelima Jean},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Mcminn},
+         familyi={M\bibinitperiod},
+         given={Phil},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bertolino},
+         familyi={B\bibinitperiod},
+         given={Antonia},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{ASBEKCTYCJCMBGWHMHMJMPBA+1}
+    \strng{fullhash}{ASBEKCTYCJCMBGWHMHMJMPBA+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{8}
+    \field{pages}{1978\bibrangedash 2001}
+    \field{title}{An orchestrated survey of methodologies for automated
+  software test case generation}
+    \field{volume}{86}
+    \field{journaltitle}{Journal of Systems and Software}
+    \field{year}{2013}
+  \endentry
+
+  \entry{arora2015open}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AI}{%
+         family={Arora},
+         familyi={A\bibinitperiod},
+         given={Ishani},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=TV}{%
+         family={Tetarwal},
+         familyi={T\bibinitperiod},
+         given={Vivek},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Saha},
+         familyi={S\bibinitperiod},
+         given={Anju},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{AITVSA1}
+    \strng{fullhash}{AITVSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{pages}{906\bibrangedash 912}
+    \field{title}{Open issues in software defect prediction}
+    \field{volume}{46}
+    \field{journaltitle}{Procedia Computer Science}
+    \field{year}{2015}
+  \endentry
+
   \entry{bajracharya2006sourcerer}{inproceedings}{}
     \name{author}{7}{}{%
       {{hash=BS}{%
@@ -157,6 +321,41 @@
     \field{year}{2015}
   \endentry
 
+  \entry{duda1973pattern}{book}{}
+    \name{author}{3}{}{%
+      {{hash=DRO}{%
+         family={Duda},
+         familyi={D\bibinitperiod},
+         given={Richard\bibnamedelima O},
+         giveni={R\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=HPE}{%
+         family={Hart},
+         familyi={H\bibinitperiod},
+         given={Peter\bibnamedelima E},
+         giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SDG}{%
+         family={Stork},
+         familyi={S\bibinitperiod},
+         given={David\bibnamedelima G},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley New York}%
+    }
+    \strng{namehash}{DROHPESDG1}
+    \strng{fullhash}{DROHPESDG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Pattern classification and scene analysis}
+    \field{volume}{3}
+    \field{year}{1973}
+  \endentry
+
   \entry{falleri2014fine}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=FJR}{%
@@ -238,6 +437,103 @@
     \field{pages}{933\bibrangedash 944}
     \field{title}{Deep code search}
     \field{year}{2018}
+  \endentry
+
+  \entry{he2009learning}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HH}{%
+         family={He},
+         familyi={H\bibinitperiod},
+         given={Haibo},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GEA}{%
+         family={Garcia},
+         familyi={G\bibinitperiod},
+         given={Edwardo\bibnamedelima A},
+         giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Ieee}%
+    }
+    \strng{namehash}{HHGEA1}
+    \strng{fullhash}{HHGEA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{9}
+    \field{pages}{1263\bibrangedash 1284}
+    \field{title}{Learning from imbalanced data}
+    \field{volume}{21}
+    \field{journaltitle}{IEEE Transactions on knowledge and data engineering}
+    \field{year}{2009}
+  \endentry
+
+  \entry{herbold2019issues}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HS}{%
+         family={Herbold},
+         familyi={H\bibinitperiod},
+         given={Steffen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Trautsch},
+         familyi={T\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TF}{%
+         family={Trautsch},
+         familyi={T\bibinitperiod},
+         given={Fabian},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HSTATF1}
+    \strng{fullhash}{HSTATF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Issues with SZZ: An empirical assessment of the state of
+  practice of defect prediction data collection}
+    \field{journaltitle}{arXiv preprint arXiv:1911.08938}
+    \field{year}{2019}
+  \endentry
+
+  \entry{hinton2006reducing}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HGE}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey\bibnamedelima E},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SRR}{%
+         family={Salakhutdinov},
+         familyi={S\bibinitperiod},
+         given={Ruslan\bibnamedelima R},
+         giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{HGESRR1}
+    \strng{fullhash}{HGESRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{5786}
+    \field{pages}{504\bibrangedash 507}
+    \field{title}{Reducing the dimensionality of data with neural networks}
+    \field{volume}{313}
+    \field{journaltitle}{science}
+    \field{year}{2006}
   \endentry
 
   \entry{jiang2007deckard}{inproceedings}{}
@@ -439,6 +735,50 @@
     \field{title}{Internet-scale real-time code clone search via multi-level
   indexing}
     \field{year}{2011}
+  \endentry
+
+  \entry{kim2013automatic}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=KD}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Dongsun},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Nam},
+         familyi={N\bibinitperiod},
+         given={Jaechang},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Jaewoo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Sunghun},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{KDNJSJKS1}
+    \strng{fullhash}{KDNJSJKS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{2013 35th International Conference on Software
+  Engineering (ICSE)}
+    \field{pages}{802\bibrangedash 811}
+    \field{title}{Automatic patch generation learned from human-written
+  patches}
+    \field{year}{2013}
   \endentry
 
   \entry{kim2010towards}{inproceedings}{}
@@ -664,6 +1004,57 @@
     \field{year}{2010}
   \endentry
 
+  \entry{lei2008ipog}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LY}{%
+         family={Lei},
+         familyi={L\bibinitperiod},
+         given={Yu},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kacker},
+         familyi={K\bibinitperiod},
+         given={Raghu},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KDR}{%
+         family={Kuhn},
+         familyi={K\bibinitperiod},
+         given={D\bibnamedelima Richard},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=OV}{%
+         family={Okun},
+         familyi={O\bibinitperiod},
+         given={Vadim},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lawrence},
+         familyi={L\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{LYKRKDROVLJ1}
+    \strng{fullhash}{LYKRKDROVLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{3}
+    \field{pages}{125\bibrangedash 148}
+    \field{title}{IPOG/IPOG-D: efficient test generation for multi-way
+  combinatorial testing}
+    \field{volume}{18}
+    \field{journaltitle}{Software Testing, Verification and Reliability}
+    \field{year}{2008}
+  \endentry
+
   \entry{lewis2013does}{inproceedings}{}
     \name{author}{6}{}{%
       {{hash=LC}{%
@@ -835,6 +1226,34 @@
     \field{year}{2019}
   \endentry
 
+  \entry{long2016automatic}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=LF}{%
+         family={Long},
+         familyi={L\bibinitperiod},
+         given={Fan},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rinard},
+         familyi={R\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LFRM1}
+    \strng{fullhash}{LFRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Proceedings of the 43rd Annual ACM SIGPLAN-SIGACT
+  Symposium on Principles of Programming Languages}
+    \field{pages}{298\bibrangedash 312}
+    \field{title}{Automatic patch generation by learning correct code}
+    \field{year}{2016}
+  \endentry
+
   \entry{ma2012transfer}{article}{}
     \name{author}{4}{}{%
       {{hash=MY}{%
@@ -929,6 +1348,41 @@
     \field{volume}{38}
     \field{journaltitle}{IEEE Transactions on Software Engineering}
     \field{year}{2011}
+  \endentry
+
+  \entry{mechtaev2016angelix}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=MS}{%
+         family={Mechtaev},
+         familyi={M\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yi},
+         familyi={Y\bibinitperiod},
+         given={Jooyong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Roychoudhury},
+         familyi={R\bibinitperiod},
+         given={Abhik},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MSYJRA1}
+    \strng{fullhash}{MSYJRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Proceedings of the 38th international conference on
+  software engineering}
+    \field{pages}{691\bibrangedash 701}
+    \field{title}{Angelix: Scalable multiline program patch synthesis via
+  symbolic analysis}
+    \field{year}{2016}
   \endentry
 
   \entry{mockus2000identifying}{inproceedings}{}
@@ -1173,6 +1627,70 @@
     \field{year}{2018}
   \endentry
 
+  \entry{pradel2012leveraging}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=PM}{%
+         family={Pradel},
+         familyi={P\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GTR}{%
+         family={Gross},
+         familyi={G\bibinitperiod},
+         given={Thomas\bibnamedelima R},
+         giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{PMGTR1}
+    \strng{fullhash}{PMGTR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{2012 34th International Conference on Software
+  Engineering (ICSE)}
+    \field{pages}{288\bibrangedash 298}
+    \field{title}{Leveraging test generation and specification mining for
+  automated bug detection without false positives}
+    \field{year}{2012}
+  \endentry
+
+  \entry{pradel2018deepbugs}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PM}{%
+         family={Pradel},
+         familyi={P\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sen},
+         familyi={S\bibinitperiod},
+         given={Koushik},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{PMSK1}
+    \strng{fullhash}{PMSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{OOPSLA}
+    \field{pages}{1\bibrangedash 25}
+    \field{title}{DeepBugs: A learning approach to name-based bug detection}
+    \field{volume}{2}
+    \field{journaltitle}{Proceedings of the ACM on Programming Languages}
+    \field{year}{2018}
+  \endentry
+
   \entry{schein2002methods}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=SAI}{%
@@ -1287,6 +1805,84 @@
     \field{year}{2019}
   \endentry
 
+  \entry{wang2016bugram}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=WS}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Song},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Chollak},
+         familyi={C\bibinitperiod},
+         given={Devin},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MAD}{%
+         family={Movshovitz-Attias},
+         familyi={M\bibinitperiod-A\bibinitperiod},
+         given={Dana},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WSCDMADTL1}
+    \strng{fullhash}{WSCDMADTL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{Proceedings of the 31st IEEE/ACM International Conference
+  on Automated Software Engineering}
+    \field{pages}{708\bibrangedash 719}
+    \field{title}{Bugram: bug detection with n-gram language models}
+    \field{year}{2016}
+  \endentry
+
+  \entry{wang2016automatically}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=WS}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Song},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Taiyue},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WSLTTL1}
+    \strng{fullhash}{WSLTTL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{2016 IEEE/ACM 38th International Conference on Software
+  Engineering (ICSE)}
+    \field{pages}{297\bibrangedash 308}
+    \field{title}{Automatically learning semantic features for defect
+  prediction}
+    \field{year}{2016}
+  \endentry
+
   \entry{watanabe2008adapting}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=WS}{%
@@ -1363,6 +1959,54 @@
     \field{pages}{87\bibrangedash 98}
     \field{title}{Deep learning code fragments for code clone detection}
     \field{year}{2016}
+  \endentry
+
+  \entry{zimmermann2009cross}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=ZT}{%
+         family={Zimmermann},
+         familyi={Z\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=NN}{%
+         family={Nagappan},
+         familyi={N\bibinitperiod},
+         given={Nachiappan},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=GH}{%
+         family={Gall},
+         familyi={G\bibinitperiod},
+         given={Harald},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Giger},
+         familyi={G\bibinitperiod},
+         given={Emanuel},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Murphy},
+         familyi={M\bibinitperiod},
+         given={Brendan},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZTNNGHGEMB1}
+    \strng{fullhash}{ZTNNGHGEMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{Proceedings of the 7th joint meeting of the European
+  software engineering conference and the ACM SIGSOFT symposium on The
+  foundations of software engineering}
+    \field{pages}{91\bibrangedash 100}
+    \field{title}{Cross-project defect prediction: a large scale experiment on
+  data vs. domain vs. process}
+    \field{year}{2009}
   \endentry
 \enddatalist
 \endinput
