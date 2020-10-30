@@ -1,0 +1,137 @@
+This chapter shows the experiment results of the reproduced baseline and our approach of {\simfinmo}.
+Table \ref{tab:precision}- \ref{tab:mcc} shows the overall results of the baseline and our approach.
+The bold values in the table indicates the highest score from the projects.
+
+\section{RQ1: {\simfinmo} vs Baseline}
+From Table \ref{tab:precision}, we can see that all most all of the baseline results are better in precision.
+However, Table \ref{tab:recall} shows that {\simfinmo} always has better performance in recall.
+Due to precision and recall having trade-offs with each other, it is better to see the F-measure which is the harmonic mean of precision and recall.
+From Table \ref{tab:f1score}, we can see that out of 6 projects, {\simfinmo} outperforms 4 of the projects in F1 score. 
+The average F1 score of {\simfinmo} is also the highest out of all the baseline machine learning algorithms.
+Table \ref{tab:mcc} shows a mixed result, but overall, random forest shows the best performance in terms of MCC with the highest average.
+From the results, we can state that {\simfinmo} outperforms the baseline overall.
+
+\section{RQ2: {\simfinmo} with different cut-off values}
+To provide a better concept of how well the model {\simfinmo} predicts defective modules, we have investigated the different performance values with different cut-off values.
+The results are tabulated in Table \ref{tab:rq_2}.
+Due to the limitation of space in the report, we have only tabulated one of the test projects, maven.
+From the table, we can see that precision score is highest when the cut-off value is low (closer to zero).
+However, the recall value is the lowest.
+The precision score peaks when the cut-off ranges from 0.000001 to 0.1 for other projects as well.
+On the other hand, precision drops pretty low when the cut-of value goes over 1.
+However, recall starts to go up rapidly as the cut-off value gets higher.
+The ascending of the recall is much higher than the descending of the precision yielding a good value of f1-score. 
+
+% \section{Analysis}
+% Table \ref{tab:precision}- \ref{tab:mcc} shows the prediction performances between baseline and {\simfinmo} in various measures such as precision, recall, f1-score, and MCC.
+
+% We use Friedman and Nemenyi test to statistically evaluate the performance of algorithms of {\simfinmo} and baseline. Friedman test is a non-parametric test to determine the statistical significant of the data that is classification algorithm, and usually comparing three or more data. In this paper, Friedman test is used to compare the statistical significance of evaluation metrics of all the classifiers of each project. The outputs of Friedman test are degree of freedom that is the maximum number of logically independent values, Friedman chi-squared that if the value is large, there is a relationship and if it is small, there isn't relationship and p-value that mean the relationship is statistically significant when the value is less than 0.05.
+% The p-value of precision is  0.008772, and Friedman chi-squared is 17.143. The p-value of recall is 5.88E-06, and Friedman chi-squared is 34.303. Lastly, p-value of f-measure is 0.2179, and Friedman chi-squared is 8.2857. They all have the same degree of freedom that is 6. As a result, since the p-value of precision and recall is less than 0.05, it was statistically verified that there is a difference in performance of the algorithm. Nemenyi test has characteristics similar to Friedman test since it is usually conducted after Friedman test. It compare statistical significant between two pairwise data. By Friedman test we found that there was a difference in the defect prediction performance of the algorithm. Therefore, we conduct Nemenyi test which calculate two algorithms difference in performance. P-value is created by comparing seven classifiers with other classifiers other than oneself.
+
+
+% Precision
+\begin{table}[!ht]
+\caption{Precision value of each baseline and \simfinmo}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+& BN & IBk & J48 & LMT & NB & RF & SFM \\ \hline
+maven & 0.220 & 0.141 & 0.253 & 0.297 & 0.147 & \textbf{0.362} & 0.146 \\ \hline
+ranger & 0.200 & 0.144 & 0.162 & 0.141 & 0.182 & \textbf{0.350} & 0.183 \\ \hline
+sentry & 0.154 & 0.065 & 0.168 & 0.160 & 0.098 & \textbf{0.233} & 0.141 \\ \hline
+sqoop & 0.220 & 0.153 & 0.205 & 0.243 & 0.170 & \textbf{0.379} & 0.036 \\ \hline
+syncope & 0.268 & 0.099 & 0.209 & 0.200 & 0.076 & \textbf{0.280} & 0.056 \\ \hline
+tez & 0.161 & 0.173 & 0.232 & 0.159 & 0.150 & \textbf{0.265} & 0.241 \\ \hline
+average & 0.204 & 0.129 & 0.205 & 0.200 & 0.137 & \textbf{0.311} & 0.134 \\ \hline
+\end{tabular}%
+
+\label{tab:precision}
+\end{table}
+
+% Recall
+\begin{table}[!ht]
+\caption{Recall value of each baseline and \simfinmo.}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+& BN & IBk & J48 & LMT & NB & RF & SFM \\ \hline
+maven & 0.114 & 0.190 & 0.126 & 0.103 & 0.322 & 0.065 & \textbf{0.834} \\ \hline
+ranger & 0.539 & 0.162 & 0.267 & 0.278 & 0.831 & 0.125 & \textbf{0.886} \\ \hline
+sentry & 0.294 & 0.120 & 0.160 & 0.184 & 0.341 & 0.104 & \textbf{0.887} \\ \hline
+sqoop & 0.207 & 0.193 & 0.213 & 0.261 & 0.441 & 0.107 & \textbf{0.846} \\ \hline
+syncope & 0.023 & 0.078 & 0.040 & 0.009 & 0.172 & 0.019 & \textbf{0.877} \\ \hline
+tez & 0.298 & 0.355 & 0.371 & 0.528 & 0.665 & 0.302 & \textbf{0.841} \\ \hline
+average & 0.246 & 0.183 & 0.196 & 0.227 & 0.462 & 0.120 & \textbf{0.862} \\ \hline
+\end{tabular}%
+\label{tab:recall}
+\end{table}
+
+
+% F-1 Score
+\begin{table}[!ht]
+\caption{F1 score of each basline and \simfinmo}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+& BN & IBk & J48 & LMT & NB & RF & SFM \\ \hline
+maven & 0.150 & 0.162 & 0.168 & 0.153 & 0.202 & 0.111 & \textbf{0.248} \\ \hline
+ranger & 0.292 & 0.152 & 0.202 & 0.187 & 0.299 & 0.184 & \textbf{0.303} \\ \hline
+sentry & 0.202 & 0.085 & 0.164 & 0.171 & 0.153 & 0.143 & \textbf{0.243} \\ \hline
+sqoop & 0.213 & 0.171 & 0.209 & \textbf{0.251} & 0.245 & 0.167 & 0.068 \\ \hline
+syncope & 0.042 & 0.087 & 0.068 & 0.017 & \textbf{0.106} & 0.036 & 0.105 \\ \hline
+tez & 0.209 & 0.232 & 0.285 & 0.244 & 0.244 & 0.282 & \textbf{0.375} \\ \hline
+average & 0.185 & 0.148 & 0.183 & 0.170 & 0.208 & 0.154 & \textbf{0.224} \\ \hline
+\end{tabular}%
+\label{tab:f1score}
+\end{table}
+
+
+% MCC
+\begin{table}[!ht]
+\caption{MCC of each baseline and \simfinmo}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+& BN & IBk & J48 & LMT & NB & RF & SFM \\ \hline
+maven & 0.096 & 0.058 & 0.119 & \textbf{0.126} & 0.089 & 0.120 & 0.056 \\ \hline
+ranger & 0.150 & 0.015 & 0.047 & 0.017 & \textbf{0.182} & 0.143 & 0.095 \\ \hline
+sentry & 0.098 & -0.043 & 0.080 & 0.079 & 0.013 & 0.100 & \textbf{0.101} \\ \hline
+sqoop & 0.084 & 0.011 & 0.071 & 0.119 & 0.053 & \textbf{0.137} & 0.047 \\ \hline
+syncope & 0.059 & 0.021 & \textbf{0.061} & 0.027 & -0.001 & 0.056 & 0.051 \\ \hline
+tez & 0.051 & 0.076 & 0.155 & 0.074 & 0.068 & \textbf{0.167} & 0.033 \\ \hline
+average & 0.089 & 0.023 & 0.089 & 0.074 & 0.067 & \textbf{0.121} & 0.064 \\ \hline
+\end{tabular}%
+\label{tab:mcc}
+\end{table}
+
+
+% RQ2.
+\begin{table}[!ht]
+\centering
+\caption{This table shows different performance metrics using different cut-off values.
+The following result is from the project maven. }
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Cut-off & \multicolumn{1}{c|}{Precision} & \multicolumn{1}{c|}{Recall} & \multicolumn{1}{c|}{F1 Score} & \multicolumn{1}{c|}{MCC} \\ \hline
+0.1 & \textbf{0.286} & 0.002 & 0.004 & 0.014 \\ \hline
+0.2 & 0.167 & 0.003 & 0.006 & 0.005 \\ \hline
+0.3 & 0.183 & 0.036 & 0.061 & 0.023 \\ \hline
+0.4 & 0.190 & 0.146 & 0.165 & 0.054 \\ \hline
+0.5 & 0.196 & 0.351 & 0.252 & 0.100 \\ \hline
+0.6 & 0.194 & 0.531 & \textbf{0.284} & \textbf{0.131} \\ \hline
+0.7 & 0.177 & 0.650 & 0.278 & 0.120 \\ \hline
+0.8 & 0.155 & 0.727 & 0.255 & 0.073 \\ \hline
+0.9 & 0.149 & 0.797 & 0.250 & 0.062 \\ \hline
+1 & 0.146 & 0.837 & 0.248 & 0.056 \\ \hline
+2 & 0.144 & 0.924 & 0.249 & 0.063 \\ \hline
+3 & 0.144 & 0.934 & 0.250 & 0.066 \\ \hline
+4 & 0.144 & 0.936 & 0.250 & 0.066 \\ \hline
+5 & 0.144 & 0.939 & 0.250 & 0.068 \\ \hline
+6 & 0.144 & 0.940 & 0.250 & 0.067 \\ \hline
+7 & 0.143 & 0.940 & 0.249 & 0.064 \\ \hline
+8 & 0.143 & 0.940 & 0.248 & 0.062 \\ \hline
+9 & 0.143 & 0.942 & 0.249 & 0.064 \\ \hline
+10 & 0.143 & \textbf{0.942} & 0.249 & 0.064 \\ \hline
+\end{tabular}%
+\label{tab:rq_2}
+\end{table}

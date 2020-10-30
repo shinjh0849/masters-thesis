@@ -4,7 +4,23 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Overall structure of the {\texttt {SimFin}} and {\texttt {SimFinMo}} approach.}}{8}{figure.3.1}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces A change instance in project isis.\relax }}{12}{figure.caption.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2}{\ignorespaces A change instance in project ignite.\relax }}{12}{figure.caption.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3}{\ignorespaces Count-based change vector if Fig. \ref {fig:cbcv_1} and \ref {fig:cbcv_2}\relax }}{13}{figure.caption.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4}{\ignorespaces A change instance in project lucene-solr (deleted line)\relax }}{13}{figure.caption.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5}{\ignorespaces A change in project lucene-solr (added line)\relax }}{14}{figure.caption.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6}{\ignorespaces A change instance in project oozie (deleted line)\relax }}{14}{figure.caption.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7}{\ignorespaces A change instance in project oozie (added line)\relax }}{14}{figure.caption.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8}{\ignorespaces Overall structure of the {\texttt {SimFin}} and {\texttt {SimFinMo}} approach.\relax }}{15}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -14,9 +30,9 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Example of a ground truth BFC from project sqoop.}}{19}{figure.6.2}
+\contentsline {figure}{\numberline {9}{\ignorespaces An example of a ground truth BFC from project tez.\relax }}{32}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Example of suggested BFC from the project myfaces.}}{20}{figure.6.3}
+\contentsline {figure}{\numberline {10}{\ignorespaces An example of suggested BFC from the project hbase.\relax }}{32}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

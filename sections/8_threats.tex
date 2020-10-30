@@ -1,16 +1,15 @@
-\section{Threats to Validity}
-\subsection{Construct Validity}
+\section{Construct Validity}
 In collecting the change vectors, we have disregarded updates and move operations from the changes due to occurrence of simple refactoring changes with no actual behavioral changes.
-However, this may lead in missing some real important changes such as changing the a method invocation to complete another method invocation or moving an if statement to next line to change the control flow of the program.
-We believe that this sacrificed some of the true positives to eliminate all the false positives.
+However, this may lead in missing some important changes such as changing the a method invocation to complete another method invocation or moving an if statement to next line to change the control flow of the program.
+We believe that this sacrificed some of the true positives to eliminate many of the false positives.
 For future work, handling precise updates and move conditions will enhance the change collecting accuracy and therefore enhance the ability of {\simfinmo}.
 
-\subsection{External Validity}
-Although we have used 7 of Apache projects to evaluate our {\simfinmo}, it might not represent all the projects that are in software repositories.
+\section{External Validity}
+Although we have used six of ASF projects to evaluate our {\simfinmo}, it might not represent all the projects that are in software repositories.
 However, the projects are various in their size, domain, and development time.
 So we believe the results from our study has empirical value in the software engineering society.
 
-\subsection{Internal Validity}
+\section{Internal Validity}
 For collecting BIC data we have used the SZZ algorithm \cite{sliwerski2005changes}.
 Although the algorithm is often used to collect BIC instances, it has limitations.
 The deleted lines from the BFC that are blamed to trace BIC are not always bug inducing as they could be refactoring or cosmetic changes \cite{neto2018impact}.

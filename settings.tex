@@ -39,7 +39,7 @@
 \input{math_commands.tex}
 \input{macro.tex}
 
-\renewcommand{\thechapter}{\arabic{chapter}}
+\renewcommand{\thechapter}{\Roman{chapter}}
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 \renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
@@ -106,3 +106,5 @@
 \patchcmd{\l@section}{{1.5em}{2.3em}}{{2.3em}{2.3em}}{}{}
 \makeatother
 \titlespacing*{\chapter}{0mm}{0em}{0em}
+
+\usepackage[skip=1\baselineskip]{caption}

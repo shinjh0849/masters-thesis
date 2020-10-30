@@ -240,6 +240,33 @@
     \field{year}{2006}
   \endentry
 
+  \entry{cha2007comprehensive}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CSH}{%
+         family={Cha},
+         familyi={C\bibinitperiod},
+         given={Sung-Hyuk},
+         giveni={S\bibinitperiod-H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{CSH1}
+    \strng{fullhash}{CSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{pages}{1}
+    \field{title}{Comprehensive survey on distance/similarity measures between
+  probability density functions}
+    \field{volume}{1}
+    \field{journaltitle}{City}
+    \field{year}{2007}
+  \endentry
+
   \entry{chidamber1994metrics}{article}{}
     \name{author}{2}{}{%
       {{hash=CSR}{%
@@ -319,41 +346,6 @@
     \field{pages}{341\bibrangedash 350}
     \field{title}{Untangling fine-grained code changes}
     \field{year}{2015}
-  \endentry
-
-  \entry{duda1973pattern}{book}{}
-    \name{author}{3}{}{%
-      {{hash=DRO}{%
-         family={Duda},
-         familyi={D\bibinitperiod},
-         given={Richard\bibnamedelima O},
-         giveni={R\bibinitperiod\bibinitdelim O\bibinitperiod},
-      }}%
-      {{hash=HPE}{%
-         family={Hart},
-         familyi={H\bibinitperiod},
-         given={Peter\bibnamedelima E},
-         giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=SDG}{%
-         family={Stork},
-         familyi={S\bibinitperiod},
-         given={David\bibnamedelima G},
-         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley New York}%
-    }
-    \strng{namehash}{DROHPESDG1}
-    \strng{fullhash}{DROHPESDG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{title}{Pattern classification and scene analysis}
-    \field{volume}{3}
-    \field{year}{1973}
   \endentry
 
   \entry{falleri2014fine}{inproceedings}{}
@@ -439,38 +431,6 @@
     \field{year}{2018}
   \endentry
 
-  \entry{he2009learning}{article}{}
-    \name{author}{2}{}{%
-      {{hash=HH}{%
-         family={He},
-         familyi={H\bibinitperiod},
-         given={Haibo},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=GEA}{%
-         family={Garcia},
-         familyi={G\bibinitperiod},
-         given={Edwardo\bibnamedelima A},
-         giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Ieee}%
-    }
-    \strng{namehash}{HHGEA1}
-    \strng{fullhash}{HHGEA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{number}{9}
-    \field{pages}{1263\bibrangedash 1284}
-    \field{title}{Learning from imbalanced data}
-    \field{volume}{21}
-    \field{journaltitle}{IEEE Transactions on knowledge and data engineering}
-    \field{year}{2009}
-  \endentry
-
   \entry{herbold2019issues}{article}{}
     \name{author}{3}{}{%
       {{hash=HS}{%
@@ -502,38 +462,6 @@
   practice of defect prediction data collection}
     \field{journaltitle}{arXiv preprint arXiv:1911.08938}
     \field{year}{2019}
-  \endentry
-
-  \entry{hinton2006reducing}{article}{}
-    \name{author}{2}{}{%
-      {{hash=HGE}{%
-         family={Hinton},
-         familyi={H\bibinitperiod},
-         given={Geoffrey\bibnamedelima E},
-         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=SRR}{%
-         family={Salakhutdinov},
-         familyi={S\bibinitperiod},
-         given={Ruslan\bibnamedelima R},
-         giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Association for the Advancement of Science}%
-    }
-    \strng{namehash}{HGESRR1}
-    \strng{fullhash}{HGESRR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{number}{5786}
-    \field{pages}{504\bibrangedash 507}
-    \field{title}{Reducing the dimensionality of data with neural networks}
-    \field{volume}{313}
-    \field{journaltitle}{science}
-    \field{year}{2006}
   \endentry
 
   \entry{jiang2007deckard}{inproceedings}{}
@@ -1769,6 +1697,50 @@
     \field{year}{2005}
   \endentry
 
+  \entry{tan2015online}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=TM}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Dara},
+         familyi={D\bibinitperiod},
+         given={Sashank},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Mayeux},
+         familyi={M\bibinitperiod},
+         given={Caleb},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{TMTLDSMC1}
+    \strng{fullhash}{TMTLDSMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{2015 IEEE/ACM 37th IEEE International Conference on
+  Software Engineering}
+    \field{pages}{99\bibrangedash 108}
+    \field{title}{Online defect prediction for imbalanced data}
+    \field{volume}{2}
+    \field{year}{2015}
+  \endentry
+
   \entry{tong2019kernel}{article}{}
     \name{author}{3}{}{%
       {{hash=TH}{%
@@ -1803,6 +1775,49 @@
   Defect Prediction}
     \field{journaltitle}{IEEE Transactions on Software Engineering}
     \field{year}{2019}
+  \endentry
+
+  \entry{uddin2011effectiveness}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=UMS}{%
+         family={Uddin},
+         familyi={U\bibinitperiod},
+         given={Md\bibnamedelima Sharif},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=RCK}{%
+         family={Roy},
+         familyi={R\bibinitperiod},
+         given={Chanchal\bibnamedelima K},
+         giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=SKA}{%
+         family={Schneider},
+         familyi={S\bibinitperiod},
+         given={Kevin\bibnamedelima A},
+         giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hindle},
+         familyi={H\bibinitperiod},
+         given={Abram},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{UMSRCKSKAHA1}
+    \strng{fullhash}{UMSRCKSKAHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{booktitle}{2011 18th Working Conference on Reverse Engineering}
+    \field{pages}{13\bibrangedash 22}
+    \field{title}{On the effectiveness of simhash for detecting near-miss
+  clones in large scale software systems}
+    \field{year}{2011}
   \endentry
 
   \entry{wang2016bugram}{inproceedings}{}
@@ -1916,6 +1931,49 @@
     \field{title}{Adapting a fault prediction model to allow inter
   languagereuse}
     \field{year}{2008}
+  \endentry
+
+  \entry{weimer2009automatically}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=WW}{%
+         family={Weimer},
+         familyi={W\bibinitperiod},
+         given={Westley},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={ThanhVu},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LGC}{%
+         family={Le\bibnamedelima Goues},
+         familyi={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={Claire},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Forrest},
+         familyi={F\bibinitperiod},
+         given={Stephanie},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WWNTLGCFS1}
+    \strng{fullhash}{WWNTLGCFS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{2009 IEEE 31st International Conference on Software
+  Engineering}
+    \field{pages}{364\bibrangedash 374}
+    \field{title}{Automatically finding patches using genetic programming}
+    \field{year}{2009}
   \endentry
 
   \entry{white2016deep}{inproceedings}{}

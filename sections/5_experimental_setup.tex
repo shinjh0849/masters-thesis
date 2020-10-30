@@ -1,0 +1,124 @@
+This chapter explains about the settings of the experiment that is conducted in this study.
+
+\section{Research Questions}
+We considered two research questions to evaluate the defect prediction of {\simfinmo}.
+
+\begin{itemize}
+    \item RQ1: Was the defect prediction of {\simfinmo} potentially comparable to those of various machine learners?
+    \item RQ2: What were the impacts of various {\simfinmo} cutoffs on prediction performance?
+\end{itemize}
+
+We investigated the effectiveness of {\simfinmo} by comparing its prediction performance with the existing baseline. Furthermore, we studied various aspects of {\simfinmo} using different cut-off values.
+
+\section{Dataset}
+We used 199 active, Java projects in the Apache Software Foundation (ASF) to construct {\simfin}.
+We chose the projects that maintain active GitHub- or Jira-issued tracking systems.
+A total of 110K BIC instances and 2.6M clean instances were collected for the training data to build the buggy and clean {\simfin} models.
+
+Table \ref{tab:test_project} shows the details of the test project.
+The test set used are also from ASF.
+These test projects were selected by considering various buggy ratios and the different number of commits.
+JIT-DP conducted in the change level still remains as very challenging to achieve high prediction performance.
+One of reasons is that the number of buggy commits is significantly smaller than that of clean commits.
+This ratios are affected by the total number of commits in a project.
+Thus, for our test data, we randomly chose six projects by considering various buggy ratios and the different number of commits.
+As explained in the approach section, the two {\simfin} models are trained by the BIC instances or clean instances.
+
+% test set list
+\begin{table}[!htp]
+\caption{The list of project used as a test set}
+\centering
+% \resizebox{\linewidth}{!}{%
+\begin{tabular}{|l|l|l|l|}
+\hline
+Name & \# of Buggy & \# of Clean & Total \\ \hline
+maven & 988 (9.2\%) & 10786 (90.8\%) & 11774 \\ \hline
+ranger & 709 (12.2\%) & 5810 (87.8\%) & 6519 \\ \hline
+sentry & 265 (10.8\%) & 2446 (89.2\%) & 2711 \\ \hline
+sqoop & 91 (2.2\%) & 4204 (97.8\%) & 4295 \\ \hline
+syncope & 1254 (4.6\%) & 26415 (95.4\%) & 27669 \\ \hline
+tez & 1091 (16.5\%) & 6629 (83.5\%) & 7720 \\ \hline
+median & 709 (9.2\%) & 6629 (90.8\%) &  7720\\ \hline
+\end{tabular}%
+% }
+\newline
+\label{tab:test_project}
+\end{table}
+
+\section{Baseline}
+The baseline we use to compare the prediction performance is a typical JIT-DP metrics reported in Kamei et al.~\cite{kamei2012large}.
+The metric types are classified as five dimensions: diffusion, size, purpose, history and experience. 
+
+\textbf{Diffusion dimension} of a change shows how distributed a change is.
+A distributed change can be measured by counting the different components of source files.
+There are four features in this category: number of modified subsystems (NS), number of modified directories (ND), number of modified files (NF) and distribution of modified code(Entropy).
+For our experiment, we considered the number of subsystem as one because they are all Java projects.
+For illustration, if a commit changed three files: java/src/clami/main.java, java/src/clami/utils.java and the java/src/remi/input.java.
+NS is one (java/src/), ND is two (clami/ and city/) and NF is three (main.java, input.java and utils.java).
+Entropy counts the distribution of modified lines in a source file.
+\textbf{Size dimension} is number of changed lines in a source file.
+The three features of this categories are: lines of code added (LA), lines of code deleted (LD) and lines of code in a file before change (LT).
+\textbf{Purpose dimension} has one feature that which is FIX.
+FIX is a binary feature which labels if a commit is a BFC or not.
+This is used as a feature because a BFC is more likely to introduce new bugs.
+\textbf{History dimension} is about the revision history of changes from the past to the present.
+NDEV is the number of unique developers who have modified a source file.
+AGE is the time between the current source and the most recent modification.
+NUC is the number of unique changes in a commit.
+For example, there are four source files in a commit that are A, B, C and D. File A and B had been modified at $\alpha$ commit, file C had been modified at $\beta$ commit and file D had been modified at $\gamma$ commit.
+In this case, NUC is three ($\alpha$, $\beta$ and $\gamma$). 
+\textbf{Experience dimension} is the information of developers in the project.
+Developers who frequently participate in the project is less likely to cause bugs because the developer understand the project well.
+Experience dimension has two factors : Developer experience(EXP) and Recent developer experience(REXP).
+EXP is the total number of commits the developer has created.
+REXP is the number of commits that have been weighted according to the year the developer participated in.
+A developer, for example, created one commit in 2017, three commits in 2018 and two commits in 2020.
+REXP in 2020 is 3.25 (i.e., $\frac{2}{1} + \frac{3}{3}  + \frac{1}{4}$), and REXP in 2021 is 1.95 (i.e., $\frac{2}{2} + \frac{3}{4}  + \frac{1}{5}$).
+
+With these metrics, an online change classification model is built as reported from Tan et al. \cite{tan2015online}.
+Online change classification is proposed to address the limitation of cross-validation on change classification.
+Firstly, cross-validation is not suitable in change classification because it will use future data for predicting bugs from the past.
+This scenario does not match the real-world scenario because buggy change and a fixing change has a chronological relationship.
+Secondly, there is a chance of mislabeling the changes. 
+When we predict a buggy change in a certain period of time, the buggy change is labeled as buggy because there is a bug-fixing change in the future.
+However, in the period of time the fixing didn't happened yet so it should be labeled as clean.
+
+To address these issues, Tan et al. \cite{tan2015online} proposed an online change classification method.
+They left a gap between the training data and the test data.
+This gap should be an estimate of bug-fixing time so that there is enough time for the buggy changes in the trainset to be discovered.
+Also, the method is to construct an online model, meaning that the training data is accumulated and updated as time goes by.
+By doing this, the model is applied with multiple runs alleviating the sensitivity that can be dependent on a particular timespan.
+
+In online change classification, the first two dataset cannot be used as test set because the when predicting the first dataset, the prediction time is before any bug-fixing is done and therefore there will be no buggy changes to predict from. The second data set cannot be used as well because at least one period of time have to skipped in order to leave a gap.
+For fair comparison, the evaluation for {\simfinmo} does not predict the first two set of data.
+
+We have assessed six of the most used machine learning algorithms in defect prediction.
+The alogrithms we trained are BayesNet (BN), k-Nearest Neighbor (IBk), Logistic model tree (LMT), Naive Bayes (NB), and random forest (RF).
+
+\subsection{Evaluation Metrics}
+The evaluation metrics for comparing {\simfinmo} and baseline are precision, recall, F1 score and MCC.
+We used a variety of evaluation metrics to assess a sound experiment and show various aspect of the predictors.
+Confusion matrix is needed to evaluation two models.
+There are four metrics as shown table \ref{tab:Confusion}.
+True positive (TP) is when the actual label is true and the model predicts as true.
+False positive (FP) is when the actual label is false but the model predicts as true.
+False negative (FN) is when the actual label is true but the model predicts as false.
+True negative (TN) is when the actual label is false and the model predicts as false.
+Precision is value of positive predictive that is the correct percentage of bugs among predicted bugs ($Precision = \frac{TP}{TP + FP}$) and recall is hit rate that is the percentage of predicted bugs among actual bugs ($Recall = \frac{TP}{TP + FN}$).
+F1-score is the harmonic mean of the precision and recall ($F1-score = 2 \times \frac{Precision \times Recall}{Precision + Recall}$). 
+MCC is matthews correlation coefficient that is a measure used in unbalanced labels ($MCC = \frac{TP \times TN - FP \times FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}$. 
+
+\begin{table}[htbp]
+\caption{Confusion matrix}
+\centering
+% \resizebox{\linewidth}{!}{%
+\begin{tabular}{|c|c|c|}\hline
+
+\backslashbox{Predictedd}{Actual} & Buggy & Clean\\ \hline
+Buggy & True Positive & False Positive \\ \hline
+Clean & False Negative & True Negative \\ \hline
+\end{tabular}%
+% }
+\newline
+\label{tab:Confusion}
+\end{table}

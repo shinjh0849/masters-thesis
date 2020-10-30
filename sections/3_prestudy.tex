@@ -1,0 +1,104 @@
+This chapter explains about the preliminary studies that was conducted to find different change representations.
+Deciding how to represent changes is very important because the information that can be carried in a representation is very different respect to their data forms.
+
+\section{Count-based Change Vector}
+Count-based change vector representation of change has a fixed size of sparse vector.
+Each index represents a change type of an AST node.
+If a certain AST node is added, the index that corresponds to the kind of change is incremented.
+We capture the changed AST nodes in 4 change types, i.e. addition, deletion, updates, moves, by using a fine grained source code differencing algorithm, Gumtree \cite{falleri2014fine}.
+Because the change is respresented in a numeric vector, it is suitable to be applied on numerous distance-calculating equations.
+Specifically we used Jaccard index to find similar changes \cite{cha2007comprehensive}.
+
+Fig. \ref{fig:cbcv_3} shows an example of two count-based change vectors that have the Jaccard index of 0.92.
+Fig. \ref{fig:cbcv_1} and \ref{fig:cbcv_2} shows an example of the corresponding changes.  
+As depicted in the figures, we can see that both changes are similar in terms of their AST structures.
+The underlined values 146 1 and 159 1 in Fig. \ref{fig:cbcv_3} means that both changes has one importDeclaration (146) and MethodInvocation (159) node added.
+
+However, there are limitations in this representation.
+Because the changes are composed of changed AST node counts, it is not able to capture the order of the changed nodes.
+So changes that had very similar vectors also resulted a totally different looking changes because of different occurances of nodes.
+So in order to capture a more accurate representation of change, we needed a different design. 
+
+\section{String Comparison}
+In order to capture the order information of changes, we experimented on using the chage code as a string value and used string comparing algorithms in finding similar changes.
+
+First, we used the traditional line differencing algorithm used in git.
+We didn't use Gumtree this time because Gumtree only considered the actual changed node without its context.
+By retrieving the whole line, we could represent the change with order and the context.
+
+To reduce noise information, we only retrieved changes that both deleted lines (buggy) and added lines (patch) within the same method scope.
+This way we can be sure that the change is a bug-fixing change. 
+Other changes that only has either added or deleted lines are not considered.
+
+
+\begin{figure}[!ht]
+    \renewcommand{\arraystretch}{1}
+    \centering
+    \includegraphics[width=\linewidth]{figures/cbcv-1.pdf}\hfill
+    \caption{A change instance in project isis.}
+    \label{fig:cbcv_1}
+\end{figure}
+    
+\begin{figure}[!ht]
+    \renewcommand{\arraystretch}{1}
+    \centering
+    \includegraphics[width=\linewidth]{figures/cbcv-2.pdf}\hfill
+    \caption{A change instance in project ignite.}
+    \label{fig:cbcv_2}
+\end{figure}
+
+\begin{figure}[!ht]
+    \renewcommand{\arraystretch}{1}
+    \centering
+    \includegraphics[width=\linewidth]{figures/cbcv-3.pdf}\hfill
+    \caption{Count-based change vector if Fig. \ref{fig:cbcv_1} and \ref{fig:cbcv_2}}
+    \label{fig:cbcv_3}
+\end{figure}
+
+
+Comparing string values take much more time than applying them on numeric values. 
+So we decided to apply SimHash algorithm to reduce the dimention and skipped comparing if they were over a certain Hamming distance \cite{uddin2011effectiveness}.
+This method significantly reduced the time of similarity comparison.
+We also used a mix of Jaccard index and Levenshtein distance to capture both ordering and the collective occurance of string values. 
+
+Fig. \ref{fig:string_1}-\ref{fig:string_4} shows an example that had a Jaccard index of 0.86. 
+As depicted in the figures, changes that had the highest similarity values were usually very short. 
+There were some changes that were longer, but they had a low similarity value.
+This result seemed natural because when string values are longer there are more chances that they will be different.
+So we decided on using a different method which is the {\simfin} to find similar commits in the software repositories.
+
+For the count-based change vector and string comparison, we should find hand-designed features such as the number of AST node occurances or string similarities.
+Also, the features are limited to syntactic characteristics of code changes.
+Therefore, we propose a method to find similar commits by applying deep learning so that the computer can directly derive semantic features.
+
+\begin{figure}[!ht]
+    \renewcommand{\arraystretch}{1}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/string_1.pdf}\hfill
+    \caption{A change instance in project lucene-solr (deleted line)}
+    \label{fig:string_1}
+\end{figure}
+
+\begin{figure}[!ht]
+    \renewcommand{\arraystretch}{1}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/string_2.pdf}\hfill
+    \caption{A change in project lucene-solr (added line)}
+    \label{fig:string_2}
+\end{figure}
+
+\begin{figure}[!ht]
+    \renewcommand{\arraystretch}{1}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/string_3.pdf}\hfill
+    \caption{A change instance in project oozie (deleted line)}
+    \label{fig:string_3}
+\end{figure}
+
+\begin{figure}[!ht]
+    \renewcommand{\arraystretch}{1}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/string_4.pdf}\hfill
+    \caption{A change instance in project oozie (added line)}
+    \label{fig:string_4}
+\end{figure}

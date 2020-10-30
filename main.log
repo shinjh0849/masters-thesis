@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.23)  29 SEP 2020 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.23)  30 OCT 2020 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1247,14 +1247,30 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box90
 \tcb@out=\write6
 \tcb@record@out=\write7
-))) (/Users/jihoshin/Documents/2019-4/masters-thesis/config.tex)
+))) (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen285
+\captionmargin@=\dimen286
+\captionwidth=\dimen287
+\caption@tempdima=\dimen288
+\caption@indent=\dimen289
+\caption@parindent=\dimen290
+\caption@hangindent=\dimen291
+)
+\c@ContinuedFloat=\count373
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+) (/Users/jihoshin/Documents/2019-4/masters-thesis/config.tex)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
-\@quotelevel=\count373
-\@quotereset=\count374
+\@quotelevel=\count374
+\@quotereset=\count375
  (/Users/jihoshin/Documents/2019-4/masters-thesis/main.aux)
 \openout1 = `main.aux'.
 
@@ -1274,7 +1290,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 8.
 LaTeX Font Info:    Try loading font information for LUC+nanummj on input line 8.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
 )
 LaTeX Font Info:    ... okay on input line 8.
@@ -1285,8 +1302,7 @@ File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 8.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1ptm.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1309,7 +1325,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count375
+\c@section@level=\count376
 )
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
@@ -1355,16 +1371,16 @@ LaTeX Info: Redefining \nameref on input line 8.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count376
-\scratchdimen=\dimen285
+\scratchcounter=\count377
+\scratchdimen=\dimen292
 \scratchbox=\box92
-\nofMPsegments=\count377
-\nofMParguments=\count378
+\nofMPsegments=\count378
+\nofMParguments=\count379
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count379
-\MPscratchDim=\dimen286
-\MPnumerator=\count380
-\makeMPintoPDFobject=\count381
+\MPscratchCnt=\count380
+\MPscratchDim=\dimen293
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
 \everyMPtoPDFconversion=\toks48
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1401,7 +1417,10 @@ Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
-) ABD: EveryShipout initializing macros (/Users/jihoshin/Documents/2019-4/masters-thesis/titlepages.tex
+) ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (/Users/jihoshin/Documents/2019-4/masters-thesis/titlepages.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -1448,33 +1467,29 @@ l.38 \clearpage
 
 
 ]
-<figures/signature.png, id=205, 221.628pt x 111.2958pt>
-File: figures/signature.png Graphic file (type png)
-<use figures/signature.png>
-Package pdftex.def Info: figures/signature.png  used on input line 66.
-(pdftex.def)             Requested size: 113.81102pt x 57.15239pt.
+<figures/signature.pdf, id=218, 1.15572pt x 1.13383pt>
+File: figures/signature.pdf Graphic file (type pdf)
+<use figures/signature.pdf>
+Package pdftex.def Info: figures/signature.pdf  used on input line 67.
+(pdftex.def)             Requested size: 2.84526pt x 2.79181pt.
  [2
 
- </Users/jihoshin/Documents/2019-4/masters-thesis/figures/signature.png>]
-File: figures/signature.png Graphic file (type png)
-<use figures/signature.png>
-Package pdftex.def Info: figures/signature.png  used on input line 104.
-(pdftex.def)             Requested size: 113.81102pt x 57.15239pt.
-File: figures/signature.png Graphic file (type png)
-<use figures/signature.png>
-Package pdftex.def Info: figures/signature.png  used on input line 109.
-(pdftex.def)             Requested size: 113.81102pt x 57.15239pt.
-File: figures/signature.png Graphic file (type png)
-<use figures/signature.png>
-Package pdftex.def Info: figures/signature.png  used on input line 114.
-(pdftex.def)             Requested size: 113.81102pt x 57.15239pt.
+ </Users/jihoshin/Documents/2019-4/masters-thesis/figures/signature.pdf>]
+File: figures/signature.pdf Graphic file (type pdf)
+<use figures/signature.pdf>
+Package pdftex.def Info: figures/signature.pdf  used on input line 105.
+(pdftex.def)             Requested size: 2.84526pt x 2.79181pt.
+File: figures/signature.pdf Graphic file (type pdf)
+<use figures/signature.pdf>
+Package pdftex.def Info: figures/signature.pdf  used on input line 110.
+(pdftex.def)             Requested size: 2.84526pt x 2.79181pt.
+File: figures/signature.pdf Graphic file (type pdf)
+<use figures/signature.pdf>
+Package pdftex.def Info: figures/signature.pdf  used on input line 115.
+(pdftex.def)             Requested size: 2.84526pt x 2.79181pt.
  [3
 
-] [4]) (/Users/jihoshin/Documents/2019-4/masters-thesis/abstract.tex
-LaTeX Font Info:    Try loading font information for LUC+uhcmj on input line 31.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
-File: lucuhcmj.fd 2013/09/26 UHC Myeongjo font definitions
-) [5
+] [4]) (/Users/jihoshin/Documents/2019-4/masters-thesis/abstract.tex [5
 
 ]) (/Users/jihoshin/Documents/2019-4/masters-thesis/contents.tex (/Users/jihoshin/Documents/2019-4/masters-thesis/main.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
@@ -1494,7 +1509,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 77.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 53.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -1505,7 +1520,17 @@ Package microtype Info: Loading generic protrusion settings for font family
  [6
 
 
-])
+]
+Overfull \hbox (1.60413pt too wide) detected at line 77
+\T1/ptm/m/n/10.95 VII. 
+ []
+
+
+Overfull \hbox (5.25043pt too wide) detected at line 83
+\T1/ptm/m/n/10.95 VIII. 
+ []
+
+)
 \tf@toc=\write9
 \openout9 = `main.toc'.
 
@@ -1528,108 +1553,141 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ]) (/Users/jihoshin/Documents/2019-4/masters-thesis/chapters.tex
-Chapter 1.
+Chapter I.
 (/Users/jihoshin/Documents/2019-4/masters-thesis/sections/1_intoduction.tex [1
 
 
 
-] [2]) [3]
-Chapter 2.
-(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/2_related_work.tex [4
+] [2] [3]) [4]
+Chapter II.
+(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/2_related_work.tex [5
 
 
-] [5] [6]) [7]
-Chapter 3.
-(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/3_approach.tex
-<figures/approach_fig.pdf, id=456, 688.54211pt x 268.58482pt>
+] [6] [7] [8] [9]) [10]
+Chapter III.
+(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/3_prestudy.tex [11
+
+
+]
+<figures/cbcv-1.pdf, id=514, 954.07988pt x 196.39052pt>
+File: figures/cbcv-1.pdf Graphic file (type pdf)
+<use figures/cbcv-1.pdf>
+Package pdftex.def Info: figures/cbcv-1.pdf  used on input line 37.
+(pdftex.def)             Requested size: 384.39511pt x 79.12418pt.
+<figures/cbcv-2.pdf, id=515, 950.84727pt x 196.90292pt>
+File: figures/cbcv-2.pdf Graphic file (type pdf)
+<use figures/cbcv-2.pdf>
+Package pdftex.def Info: figures/cbcv-2.pdf  used on input line 45.
+(pdftex.def)             Requested size: 384.39511pt x 79.60101pt.
+<figures/cbcv-3.pdf, id=516, 920.76712pt x 94.36707pt>
+File: figures/cbcv-3.pdf Graphic file (type pdf)
+<use figures/cbcv-3.pdf>
+Package pdftex.def Info: figures/cbcv-3.pdf  used on input line 53.
+(pdftex.def)             Requested size: 384.39511pt x 39.39485pt.
+ [12 </Users/jihoshin/Documents/2019-4/masters-thesis/figures/cbcv-1.pdf> </Users/jihoshin/Documents/2019-4/masters-thesis/figures/cbcv-2.pdf>]
+<figures/string_1.pdf, id=544, 944.48837pt x 300.99782pt>
+File: figures/string_1.pdf Graphic file (type pdf)
+<use figures/string_1.pdf>
+Package pdftex.def Info: figures/string_1.pdf  used on input line 77.
+(pdftex.def)             Requested size: 307.51726pt x 98.00224pt.
+<figures/string_2.pdf, id=545, 947.25218pt x 293.58673pt>
+File: figures/string_2.pdf Graphic file (type pdf)
+<use figures/string_2.pdf>
+Package pdftex.def Info: figures/string_2.pdf  used on input line 85.
+(pdftex.def)             Requested size: 307.51726pt x 95.31152pt.
+ [13 </Users/jihoshin/Documents/2019-4/masters-thesis/figures/cbcv-3.pdf> </Users/jihoshin/Documents/2019-4/masters-thesis/figures/string_1.pdf>]
+<figures/string_3.pdf, id=570, 938.22487pt x 242.7972pt>
+File: figures/string_3.pdf Graphic file (type pdf)
+<use figures/string_3.pdf>
+Package pdftex.def Info: figures/string_3.pdf  used on input line 93.
+(pdftex.def)             Requested size: 307.51726pt x 79.5787pt.
+<figures/string_4.pdf, id=571, 947.26572pt x 238.16087pt>
+File: figures/string_4.pdf Graphic file (type pdf)
+<use figures/string_4.pdf>
+Package pdftex.def Info: figures/string_4.pdf  used on input line 101.
+(pdftex.def)             Requested size: 307.51726pt x 77.31413pt.
+) [14 </Users/jihoshin/Documents/2019-4/masters-thesis/figures/string_2.pdf> </Users/jihoshin/Documents/2019-4/masters-thesis/figures/string_3.pdf> </Users/jihoshin/Documents/2019-4/masters-thesis/figures/string_4.pdf>]
+Chapter IV.
+(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/4_approach.tex
+<figures/approach_fig.pdf, id=606, 714.46342pt x 218.91365pt>
 File: figures/approach_fig.pdf Graphic file (type pdf)
 <use figures/approach_fig.pdf>
 Package pdftex.def Info: figures/approach_fig.pdf  used on input line 5.
-(pdftex.def)             Requested size: 384.39511pt x 149.94336pt.
- [8
+(pdftex.def)             Requested size: 384.39511pt x 117.7807pt.
+ [15
 
 
- </Users/jihoshin/Documents/2019-4/masters-thesis/figures/approach_fig.pdf>] [9] [10]) [11]
-Chapter 4.
-(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/4_experimental_setup.tex
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 8.
+ </Users/jihoshin/Documents/2019-4/masters-thesis/figures/approach_fig.pdf>] [16] [17] [18] [19]) [20]
+Chapter V.
+(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/5_experimental_setup.tex
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 7.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [12
+) [21
 
 
-] [13]) [14]
-Chapter 5.
-(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/5_experiment_results.tex
-Overfull \hbox (58.38557pt too wide) in paragraph at lines 13--13
-|[]| 
- []
-
-[15
+] [22] [23] [24]) [25]
+Chapter VI.
+(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/6_experiment_results.tex [26
 
 
-]) [16] [17]
-Chapter 6.
-(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/6_discussions.tex [18
+]) [27] [28] [29]
+Chapter VII.
+(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/7_discussions.tex [30
 
 
 ]
-<figures/patchsuggstion_ex1.pdf, id=573, 718.04369pt x 210.66867pt>
-File: figures/patchsuggstion_ex1.pdf Graphic file (type pdf)
-<use figures/patchsuggstion_ex1.pdf>
-Package pdftex.def Info: figures/patchsuggstion_ex1.pdf  used on input line 45.
-(pdftex.def)             Requested size: 384.39511pt x 112.77895pt.
-<figures/patchsuggstion_ex2.pdf, id=574, 720.51625pt x 312.53078pt>
-File: figures/patchsuggstion_ex2.pdf Graphic file (type pdf)
-<use figures/patchsuggstion_ex2.pdf>
-Package pdftex.def Info: figures/patchsuggstion_ex2.pdf  used on input line 53.
-(pdftex.def)             Requested size: 384.39511pt x 166.73734pt.
-) [19 </Users/jihoshin/Documents/2019-4/masters-thesis/figures/patchsuggstion_ex1.pdf>] [20 </Users/jihoshin/Documents/2019-4/masters-thesis/figures/patchsuggstion_ex2.pdf>]
-Chapter 7.
-(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/7_threats.tex) [21
+<figures/ps1.png, id=745, 576.1525pt x 368.37625pt>
+File: figures/ps1.png Graphic file (type png)
+<use figures/ps1.png>
+Package pdftex.def Info: figures/ps1.png  used on input line 73.
+(pdftex.def)             Requested size: 384.39511pt x 245.78215pt.
+<figures/ps2.png, id=747, 651.43375pt x 143.53625pt>
+File: figures/ps2.png Graphic file (type png)
+<use figures/ps2.png>
+Package pdftex.def Info: figures/ps2.png  used on input line 81.
+(pdftex.def)             Requested size: 384.39511pt x 84.69878pt.
+) [31] [32 </Users/jihoshin/Documents/2019-4/masters-thesis/figures/ps1.png> </Users/jihoshin/Documents/2019-4/masters-thesis/figures/ps2.png>]
+Chapter VIII.
+(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/8_threats.tex) [33
+
+
+] [34]
+Chapter IX.
+(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/9_conclusion.tex) [35
 
 
 ]
-Chapter 8.
-(/Users/jihoshin/Documents/2019-4/masters-thesis/sections/8_conclusion.tex) [22
+Chapter X.
+[36
 
-
-]
-Chapter 9.
-[23
-
-] [24
-
-] [25] [26]) (/Users/jihoshin/Documents/2019-4/masters-thesis/acknowledge.tex [27]) 
+] [37] [38] [39]) 
 AED: lastpage setting LastPage
-[28
-
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 16.
+[40]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
  (/Users/jihoshin/Documents/2019-4/masters-thesis/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 16.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 16.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 50E2A505483C958C2692F5D3BB5686AE;2892.
+(rerunfilecheck)             Checksum: C00D15AD1E061321A2CC0D7B93E54B60;3051.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31829 strings out of 492649
- 582837 string characters out of 6129622
- 916672 words of memory out of 5000000
- 34643 multiletter control sequences out of 15000+600000
- 72118 words of font info for 264 fonts, out of 8000000 for 9000
+ 32898 strings out of 492649
+ 602486 string characters out of 6129622
+ 928156 words of memory out of 5000000
+ 35685 multiletter control sequences out of 15000+600000
+ 70514 words of font info for 259 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,16n,73p,1222b,1484s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/uhc/umj/umj02.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/jihoshin/Documents/2019-4/masters-thesis/main.pdf (38 pages, 2119341 bytes).
+ 57i,16n,73p,1177b,1460s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /Users/jihoshin/Documents/2019-4/masters-thesis/main.pdf (50 pages, 2975151 bytes).
 PDF statistics:
- 815 PDF objects out of 1000 (max. 8388607)
- 700 compressed objects within 7 object streams
- 143 named destinations out of 1000 (max. 500000)
- 23945 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 980 PDF objects out of 1000 (max. 8388607)
+ 819 compressed objects within 9 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 24004 words of extra memory for PDF output out of 24883 (max. 10000000)
 
