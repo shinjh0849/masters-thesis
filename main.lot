@@ -10,21 +10,25 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces The list of project used as a test set\relax }}{22}{table.caption.12}
+\contentsline {table}{\numberline {1}{\ignorespaces The list of project used as a test set\relax }}{21}{table.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2}{\ignorespaces Confusion matrix\relax }}{25}{table.caption.13}
+\contentsline {table}{\numberline {2}{\ignorespaces Confusion matrix\relax }}{24}{table.caption.13}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3}{\ignorespaces Precision value of each baseline and \texttt {SimFinMo}\relax }}{27}{table.caption.14}
+\contentsline {table}{\numberline {3}{\ignorespaces Precision value of each baseline and \texttt {SimFinMo}\relax }}{25}{table.caption.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4}{\ignorespaces Recall value of each baseline and \texttt {SimFinMo}.\relax }}{27}{table.caption.15}
+\contentsline {table}{\numberline {4}{\ignorespaces Recall value of each baseline and \texttt {SimFinMo}.\relax }}{26}{table.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5}{\ignorespaces F1 score of each basline and \texttt {SimFinMo}\relax }}{28}{table.caption.16}
+\contentsline {table}{\numberline {5}{\ignorespaces F1 score of each basline and \texttt {SimFinMo}\relax }}{26}{table.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6}{\ignorespaces MCC of each baseline and \texttt {SimFinMo}\relax }}{28}{table.caption.17}
+\contentsline {table}{\numberline {6}{\ignorespaces MCC of each baseline and \texttt {SimFinMo}\relax }}{26}{table.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7}{\ignorespaces This table shows different performance metrics using different cut-off values. The following result is from the project maven. \relax }}{29}{table.caption.18}
+\contentsline {table}{\numberline {7}{\ignorespaces A table that shows the statistics of suggested patches and their labeling.\relax }}{29}{table.caption.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8}{\ignorespaces This table shows different performance metrics using different cut-off values. The following result is from the project maven. \relax }}{30}{table.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {9}{\ignorespaces This table shows prediction performance of combined {\texttt {SimFin}} and two divided {\texttt {SimFin}}\relax }}{30}{table.caption.22}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

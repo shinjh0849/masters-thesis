@@ -18,7 +18,7 @@ First, we used the SZZ algorithm \cite{sliwerski2005changes} to collect BICs fro
 The SZZ algorithm first mined bug fixing changes (BFC) from issue tracking system such as JIRA.
 The issue tracking system manages all issues that have occurred during the development of the project.
 The issue is labeled according to the type, status and resolution.
-To find the bug-fix issue, we look for issues that are labelled as the following: type that are labelled ``Bug'', status that are labelled ``Closed'' or ``Resolved'' and resolution that are labelled ``Fixed''.
+To find the bug-fix issue, we look for issues that are labeled as the following: type that are labeled ``Bug'', status that are labeled ``Closed'' or ``Resolved'' and resolution that are labeled ``Fixed''.
 
 Projects that are managed by JIRA include issue keys which are unique numbers of issues and used in commit messages.
 Therefore, by using the issue key of bug fix issue, we can find BFCs.
@@ -57,10 +57,23 @@ The reason for making the label in such way is because when {\simfin} is given w
 The key value should contain the id of the commit and the source file path of the change to return the most similar commit.
 
 \section{{\simfin}: Similar Change Finder}
-As in Fig.~\ref{fig:approach}, {\simfin} is composed of a pair of deep auto encoder-decoder (AED) and k-Nearest Neighborhood (kNN) models.
-One set of AED model and a kNN model is built from BIC instances and another set of models are built from clean instances. 
-The change vectors are first encoded through deep feature learning using AED model.
-Then the encoded features are fed into a kNN model to search the nearest commit change from the target commit.
+{\simfin} is composed of a deep auto encoder-decoder (AED) and a k-Nearest Neighborhood (kNN) model.
+The deep AED model first encodes the embedded syntactic vectors from Gumtree and learns the semantics of changes.
+Then the kNN model computes distances of each data points of changes and returns the closest \emph{k} changes and its distance.
+
+\subsection{Number of {\simfin}s}
+First, we have built one {\simfin} where all the BICs and clean changes are trained together.
+This is reasonable as we are going to use the ratio of the distance value of closest BIC and the clean change to the target change in identifying the defect.
+By plotting all the changes in the same encoding space, the degree of distance between the target change and both clean and buggy changes will have the same degree.
+
+Second, we also built two separate {\simfin} where one pair of AED and kNN model is trained with buggy change instances and the other with clean change instances.
+When we build two separate {\simfin} models, the encoding space of buggy and clean changes become different, hence using there distance ration can be insensible.
+However, due to the data size of clean changes and buggy changes being extremely imbalanced (around 26 : 1), looking for the closest buggy and clean changes within a certain \emph{k} can show a very skewed result.
+
+To alleviate these issues raised from imbalanced class, we trained a separate AED model to get the distance of the closest \emph{k} change instances in each buggy and clean data pool.
+With \emph{k} numbers of closest distances in both pools, we hope to get the representative distance value of each pools.
+
+For validity of choosing whether to train one or two different {\simfin}s, we compared the performance measure of the two methods in section VI.
 
 \subsection{Auto Encoder-Decoder Model}
 AED model in {\simfin} is used to learn and encode the relationship of the syntactic feature and its semantics.

@@ -232,8 +232,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{booktitle}{Companion to the 21st ACM SIGPLAN symposium on
-  Object-oriented programming systems, languages, and applications}
+    \field{booktitle}{OOPSLA}
     \field{pages}{681\bibrangedash 682}
     \field{title}{Sourcerer: a search engine for open source code supporting
   structure-based search}
@@ -798,8 +797,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{booktitle}{Proceedings of the 40th International Conference on
-  Software Engineering}
+    \field{booktitle}{ICSE}
     \field{pages}{946\bibrangedash 957}
     \field{title}{FaCoY: a code-to-code search engine}
     \field{year}{2018}
@@ -2058,9 +2056,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
-    \field{booktitle}{Proceedings of the 7th joint meeting of the European
-  software engineering conference and the ACM SIGSOFT symposium on The
-  foundations of software engineering}
+    \field{booktitle}{ESEC/FSE}
     \field{pages}{91\bibrangedash 100}
     \field{title}{Cross-project defect prediction: a large scale experiment on
   data vs. domain vs. process}

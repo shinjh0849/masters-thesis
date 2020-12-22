@@ -557,6 +557,9 @@ INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/4_approach.tex
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/approach_fig.pdf
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/approach_fig.pdf
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/approach_fig.pdf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/5_experimental_setup.tex
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/5_experimental_setup.tex
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ptm.fd
@@ -565,6 +568,12 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/6_experiment_results.tex
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/6_experiment_results.tex
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/direct_hint.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/direct_hint.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/direct_hint.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/indirect_hint.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/indirect_hint.png
+INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/indirect_hint.png
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/7_discussions.tex
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/7_discussions.tex
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/figures/ps1.png
@@ -577,9 +586,6 @@ INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/8_threats.tex
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/8_threats.tex
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/9_conclusion.tex
 INPUT /Users/jihoshin/Documents/2019-4/masters-thesis/sections/9_conclusion.tex
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmrc8t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmrc8t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm

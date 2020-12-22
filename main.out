@@ -19,30 +19,33 @@
 \BOOKMARK [2][-]{subsection.2.2.3}{Heterogeneous Defect Prediction}{section.2.2}% 19
 \BOOKMARK [2][-]{subsection.2.2.4}{Just-in-Time Defect Prediction}{section.2.2}% 20
 \BOOKMARK [1][-]{section.2.3}{Automatic Program Repair}{chapter.2}% 21
-\BOOKMARK [0][-]{chapter.3}{Preliminary Study}{}% 22
+\BOOKMARK [0][-]{chapter.3}{Preliminary Studies}{}% 22
 \BOOKMARK [1][-]{section.3.1}{Count-based Change Vector}{chapter.3}% 23
 \BOOKMARK [1][-]{section.3.2}{String Comparison}{chapter.3}% 24
 \BOOKMARK [0][-]{chapter.4}{Approach}{}% 25
 \BOOKMARK [1][-]{section.4.1}{Data Collection}{chapter.4}% 26
 \BOOKMARK [1][-]{section.4.2}{Vector Embedding}{chapter.4}% 27
 \BOOKMARK [1][-]{section.4.3}{SimFin: Similar Change Finder}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.3.1}{Auto Encoder-Decoder Model}{section.4.3}% 29
-\BOOKMARK [2][-]{subsection.4.3.2}{k-Nearest Neighborhood}{section.4.3}% 30
-\BOOKMARK [1][-]{section.4.4}{Prediction}{chapter.4}% 31
-\BOOKMARK [0][-]{chapter.5}{Experimental Setup}{}% 32
-\BOOKMARK [1][-]{section.5.1}{Research Questions}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.2}{Dataset}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.3}{Baseline}{chapter.5}% 35
-\BOOKMARK [2][-]{subsection.5.3.1}{Evaluation Metrics}{section.5.3}% 36
-\BOOKMARK [0][-]{chapter.6}{Experiment Results}{}% 37
-\BOOKMARK [1][-]{section.6.1}{RQ1: SimFinMo vs Baseline}{chapter.6}% 38
-\BOOKMARK [1][-]{section.6.2}{RQ2: SimFinMo with different cut-off values}{chapter.6}% 39
-\BOOKMARK [0][-]{chapter.7}{Discussions}{}% 40
-\BOOKMARK [1][-]{section.7.1}{Importance of this Approach}{chapter.7}% 41
-\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 42
-\BOOKMARK [0][-]{chapter.8}{Threats}{}% 43
-\BOOKMARK [1][-]{section.8.1}{Construct Validity}{chapter.8}% 44
-\BOOKMARK [1][-]{section.8.2}{External Validity}{chapter.8}% 45
-\BOOKMARK [1][-]{section.8.3}{Internal Validity}{chapter.8}% 46
-\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 47
-\BOOKMARK [0][-]{chapter.10}{References}{}% 48
+\BOOKMARK [2][-]{subsection.4.3.1}{Number of SimFins}{section.4.3}% 29
+\BOOKMARK [2][-]{subsection.4.3.2}{Auto Encoder-Decoder Model}{section.4.3}% 30
+\BOOKMARK [2][-]{subsection.4.3.3}{k-Nearest Neighborhood}{section.4.3}% 31
+\BOOKMARK [1][-]{section.4.4}{Prediction}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{Experimental Setup}{}% 33
+\BOOKMARK [1][-]{section.5.1}{Research Questions}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{Dataset}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.3}{Baseline}{chapter.5}% 36
+\BOOKMARK [2][-]{subsection.5.3.1}{Evaluation Metrics}{section.5.3}% 37
+\BOOKMARK [0][-]{chapter.6}{Experiment Results}{}% 38
+\BOOKMARK [1][-]{section.6.1}{RQ1: SimFinMo vs Baseline}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.2}{RQ2: How actionable is SimFinMo?}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.3}{RQ3: SimFinMo with different cut-off values}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.4}{RQ4: Combined SimFin vs. Divided SimFin}{chapter.6}% 42
+\BOOKMARK [0][-]{chapter.7}{Discussions}{}% 43
+\BOOKMARK [1][-]{section.7.1}{Importance of this Approach}{chapter.7}% 44
+\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 45
+\BOOKMARK [0][-]{chapter.8}{Threats to Validity}{}% 46
+\BOOKMARK [1][-]{section.8.1}{Construct Validity}{chapter.8}% 47
+\BOOKMARK [1][-]{section.8.2}{External Validity}{chapter.8}% 48
+\BOOKMARK [1][-]{section.8.3}{Internal Validity}{chapter.8}% 49
+\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 50
+\BOOKMARK [0][-]{chapter.10}{References}{}% 51

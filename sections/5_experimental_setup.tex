@@ -5,13 +5,16 @@ We considered two research questions to evaluate the defect prediction of {\simf
 
 \begin{itemize}
     \item RQ1: Was the defect prediction of {\simfinmo} potentially comparable to those of various machine learners?
-    \item RQ2: What were the impacts of various {\simfinmo} cutoffs on prediction performance?
+    \item RQ2: How actionable are patches suggested by the {\simfinmo}?
+    \item RQ3: What were the impacts of various {\simfinmo} cutoffs on prediction performance?
+    \item RQ4: How effective is using the divdided {\simfin} in terms of predictive performance?
 \end{itemize}
 
-We investigated the effectiveness of {\simfinmo} by comparing its prediction performance with the existing baseline. Furthermore, we studied various aspects of {\simfinmo} using different cut-off values.
+We investigated the effectiveness of {\simfinmo} by comparing its prediction performance with the existing baseline.
+Furthermore, we studied various aspects of {\simfinmo} using different cut-off values.
 
 \section{Dataset}
-We used 199 active, Java projects in the Apache Software Foundation (ASF) to construct {\simfin}.
+We used 193 active, Java projects in the Apache Software Foundation (ASF) to construct {\simfin}.
 We chose the projects that maintain active GitHub- or Jira-issued tracking systems.
 A total of 110K BIC instances and 2.6M clean instances were collected for the training data to build the buggy and clean {\simfin} models.
 
@@ -114,7 +117,7 @@ MCC is matthews correlation coefficient that is a measure used in unbalanced lab
 % \resizebox{\linewidth}{!}{%
 \begin{tabular}{|c|c|c|}\hline
 
-\backslashbox{Predictedd}{Actual} & Buggy & Clean\\ \hline
+\backslashbox{Predicted}{Actual} & Buggy & Clean\\ \hline
 Buggy & True Positive & False Positive \\ \hline
 Clean & False Negative & True Negative \\ \hline
 \end{tabular}%
