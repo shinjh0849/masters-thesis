@@ -1,11 +1,11 @@
 This chapter shows the experiment results of the reproduced baseline and our approach of {\simfinmo}.
 Table \ref{tab:precision}- \ref{tab:mcc} shows the overall results of the baseline and our approach.
-The bold values in the table indicates the highest score from the projects.
+The bold values in the table indicate the highest score from the projects.
 
 
 \section{RQ1: {\simfinmo} vs Baseline}
 From Table \ref{tab:precision}, we can see that all most all of the baseline results are better in precision.
-However, Table \ref{tab:recall} shows that {\simfinmo} always has better performance in recall.
+However, Table \ref{tab:recall} shows that {\simfinmo} always has better performance in the recall.
 Due to precision and recall having trade-offs with each other, it is better to see the F-measure which is the harmonic mean of precision and recall.
 From Table \ref{tab:f1score}, we can see that out of 6 projects, {\simfinmo} outperforms 4 of the projects in F1 score. 
 The average F1 score of {\simfinmo} is also the highest out of all the baseline machine learning algorithms.
@@ -14,7 +14,7 @@ From the results, we can state that {\simfinmo} outperforms the baseline overall
 
 % Precision
 \begin{table}[!ht]
-\caption{Precision value of each baseline and \simfinmo}
+\caption{The precision value of each baseline and \simfinmo}
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
@@ -91,36 +91,36 @@ average & 0.089 & 0.023 & 0.089 & 0.074 & 0.067 & \textbf{0.121} & 0.064 \\ \hli
 \section{RQ2: How actionable is {\simfinmo}?}
 To show how much the patches that are suggested by {\simfinmo} are helpful to developers, we manually inspected the patches and labeled each of them.
 We only inspected patches that were predicted to be a true positive.
-We also only considered patches were the ground truth patches are short. 
-The reason we only considered short patches because most of the longer patches composed refactoring and architecture changes.
-With these kind of patches, it is difficult analyze the patches correctly, due to the variety of number and domain of the used projects.
-The labels our are as follows:
+We also only considered patches where the ground truth patches are short. 
+The reason we only considered short patches because most of the longer patches are composed of refactoring and architecture changes.
+With these kinds of patches, it is difficult to analyze the patches correctly, due to the variety of number and domain of the used projects.
+The labels are as follows:
 \begin{enumerate}
-    \item \textbf{Direct hint}: the ground truth patch and the suggested patch are same changes respect to their AST node type.
-    \item \textbf{Indirect hint}: the ground truth patch and the suggested patch are not the same changes respect to their AST node type, however, they have similar node types with high relevance.
-    \item \textbf{No hint}: the ground truth patch and the suggested patch are does not have the same changes respect to their AST node type and has no relevance at all.
+    \item \textbf{Direct hint}: the ground truth patch and the suggested patch are the same changes to their AST node type.
+    \item \textbf{Indirect hint}: the ground truth patch and the suggested patch are not the same changes to their AST node type, however, they have similar node types with high relevance.
+    \item \textbf{No hint}: the ground truth patch and the suggested patch does not have the same changes to their AST node type and has no relevance at all.
 \end{enumerate}
-The labeling can be very subjective as to say that changes have relevance or not.
+The labeling can be very subjective to say that changes have relevance or not.
 So we include some examples to show how the manual labels are done.
 
-In Fig. \ref{fig:direct_hint}, there are three changes: the target BIC change, ground truth patch of the target BIC change, and the suggested patch. 
-By looking at the the ground truth patch, we can see that the intialization of a string variable contatains bug as it is replaced with another value (true -> false).
+In Fig. \ref{fig:direct_hint}, there are three changes: the target BIC change, the ground truth patch of the target BIC change, and the suggested patch. 
+By looking at the ground truth patch, we can see that the initialization of a string variable contains a bug as it is replaced with another value (true -> false).
 While they have different values, we can see that the suggested patch also changes a public static final String value.
-In cases where the changed AST node types are the same between ground truth patch and the suggested patch, we label them as \emph{Direct hint}.
+In cases where the changed AST node types are the same between the ground truth patch and the suggested patch, we label them as \emph{Direct hint}s.
 
-Similar example is shown in Fig. \ref{fig:indirect_hint}.
-The introduced bug has to do with ommitting a parameter in a method implementation.
-The suggeseted patch also shows that it added a method paramenter.
+A Similar example is shown in Fig. \ref{fig:indirect_hint}.
+The introduced bug has to do with omitting a parameter in a method implementation.
+The suggested patch also shows that it added a method parameter.
 However, it is happening in a method invocation line of code.
 And the type of the changed parameter is most likely to be a different type.
-Eventhough the change contains different types of AST node, we can still infer that omission of a parameter can help fix the bug.
-In these kind of cases, we label them as \emph{Indirect hint}.
+Even though the change contains different types of AST nodes, we can still infer that the omission of a parameter can help fix the bug.
+In these kinds of cases, we label them as \emph{Indirect hint}s.
 
 Through this method of labeling, we inspected all the test projects.
 Table \ref{tab:rq_2} shows the statistics of the suggested patch labeling.
-We can see that 28\% ~ 60\% of the patches are shows direct or indirect hint.
-The percentage of the hint respect to the suggested patch can be shown as low.
-However, it is encouraging tho see this result because no other method provided an actionable message this direct in other defect prediction methods.
+We can see that 28\% \~ 60\% of the patches are a direct or indirect hint.
+The percentage of the hint concerning the suggested patch can be shown as low.
+However, it is encouraging to see this result because no other method provided an actionable message this direct in other defect prediction methods.
 And to consider that the result only shows the top 1 suggestions, we can hope that the hint rate will be higher when we consider more top k instances.
 
 \begin{figure*}[!tbp]
@@ -161,7 +161,7 @@ And to consider that the result only shows the top 1 suggestions, we can hope th
 To provide a better concept of how well the model {\simfinmo} predicts defective modules, we have investigated the different performance values with different cut-off values.
 The results are tabulated in Table \ref{tab:rq_3}.
 Due to the limitation of space in the report, we have only tabulated one of the test projects, maven.
-From the table, we can see that precision score is highest when the cut-off value is low (closer to zero).
+From the table, we can see that the precision score is highest when the cut-off value is low (closer to zero).
 However, the recall value is the lowest.
 The precision score peaks when the cut-off ranges from 0.000001 to 0.1 for other projects as well.
 On the other hand, precision drops pretty low when the cut-of value goes over 1.
@@ -187,7 +187,7 @@ Cut-off & \multicolumn{1}{c|}{Precision} & \multicolumn{1}{c|}{Recall} & \multic
 0.9 & 0.149 & 0.797 & 0.250 & 0.062 \\ \hline
 1 & 0.146 & 0.837 & 0.248 & 0.056 \\ \hline
 2 & 0.144 & 0.924 & 0.249 & 0.063 \\ \hline
-3 & 0.144 & 0.934 & 0.250 & 0.066 \\ \hline
+3 & 0.144 & de0.934 & 0.250 & 0.066 \\ \hline
 4 & 0.144 & 0.936 & 0.250 & 0.066 \\ \hline
 5 & 0.144 & 0.939 & 0.250 & 0.068 \\ \hline
 6 & 0.144 & 0.940 & 0.250 & 0.067 \\ \hline
@@ -201,11 +201,11 @@ Cut-off & \multicolumn{1}{c|}{Precision} & \multicolumn{1}{c|}{Recall} & \multic
 
 
 \section{RQ4: Combined {\simfin} vs. Divided {\simfin}}
-In section IV, we have talked about how we decided on choosing one combind design of {\simfin} or buggy/clean divided design of {\simfin}.
-To show how different design of {\simfin} contribute to the prediction performance of {\simfinmo}, we compare their result.
-In table \ref{tab:rq_4}, we can see that the divided {\simfin} outperforms the combined {\simfin} in precision, recall, and f1-score of every test projects.
+In section IV, we have talked about how we decided on choosing one combined design of {\simfin} or a buggy/clean divided design of {\simfin}.
+To show how different designs of {\simfin} contribute to the prediction performance of {\simfinmo}, we compare their result.
+In table \ref{tab:rq_4}, we can see that the divided {\simfin} outperforms the combined {\simfin} in precision, recall, and f1-score of every test project.
 It also outperforms 4 out of 6 test projects in MCC.
-Through this result, we think that dividing the encoding space of buggy and clean changes helps retrieving the representative distance from the target change.
+Through this result, we think that dividing the encoding space of buggy and clean changes helps to retrieve the representative distance from the target change.
 
 % RQ4.
 \begin{table}[!ht]

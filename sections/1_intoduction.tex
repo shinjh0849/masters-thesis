@@ -1,15 +1,15 @@
 Along with the rise in software complexity, the cost of quality assurance and software development continues to rise too.
 To address this issue, numerous studies have been conducted for automated quality assurance tasks to reduce the cost of software development and maintenance, such as automatic program repair (APR) \cite{kim2013automatic, long2016automatic, mechtaev2016angelix}, automated test case generation \cite{ali2009systematic, anand2013orchestrated, lei2008ipog} defect detection \cite{pradel2012leveraging, pradel2018deepbugs, wang2016bugram}, software defect prediction (SDP) \cite{nam2017heterogeneous, wang2016automatically, zimmermann2009cross}.
 Among them, (SDP) models have been actively studied to efficiently allocate testing resources to reduce development cost.
-Software defect prediction uses static code metrics as features on machine learning predictors to identify module of code as buggy or clean. 
+Software defect prediction uses static code metrics as features on machine learning predictors to identify a module of code as buggy or clean. 
 However, like other techniques, defect prediction models face numerous challenges in practical usage.
 
 \section{Main Issues of Defect Prediction}
-There are several issues in SDP such as identifying relationship between feature metrics and the label, no consistency in adopting performance evaluation metrics, difficulty in gathering buggy data, lack of standard or general framework, lack of validity in the economic benefit, and the validity of how to retrieve buggy data \cite{arora2015open, herbold2019issues}.
-Apart from these issues, we want to tackle some other important issues that challenges the research field of defect prediction.
+There are several issues in SDP such as identifying the relationship between feature metrics and the label, no consistency in adopting performance evaluation metrics, difficulty in gathering buggy data, lack of standard or general framework, lack of validity in the economic benefit, and the validity of how to retrieve buggy data \cite{arora2015open, herbold2019issues}.
+Apart from these issues, we want to tackle some other important issues that challenge the research field of defect prediction.
 
 \subsection{Actionable Messages}
-One of major limitation that SDP models face is that the predicted results lack actionable or explainable messages for the developers to act upon \cite{lewis2013does}.
+One of the major limitations that SDP models face is that the predicted results lack actionable or explainable messages for the developers to act upon \cite{lewis2013does}.
 The traditional defect prediction model predicts source code modules, usually in a file or a method level, as risky according to their degree of complexity.
 However, the prediction does not specify which part of the code is buggy or explains what problems the module is causing.
 Due to this nature, it is difficult for the developer to act upon the prediction result or understand how the module is causing the program.
@@ -23,7 +23,7 @@ In other words, the models do not provide actionable messages for the bug-prone 
 \subsection{Cold-start Problem}
 The second major problem of traditional defect prediction models is the cold-start problem.
 A cold-start problem occurs when the target system lacks historical data \cite{schein2002methods}. 
-Because traditional defect prediction models are built with previous versions of the target system, it is impossible to apply on projects that are just being started.
+Because traditional defect prediction models are built with previous versions of the target system, it is impossible to apply to projects that are just being started.
 To alleviate this problem, the study of cross-project defect prediction (CPDP) and heterogeneous defect prediction (HDP) got popular.
 CPDP enables defect prediction to be applied on newly starting projects because the prediction models are trained from other existing projects (cross-project).
 HDP enables CPDP even when the source project and the test project have different metrics as features.
@@ -35,7 +35,7 @@ However, CPDP and HDP do not fully alleviate the cold-start problem in the JIT s
 Herein, we propose a novel and potential SDP paradigm to resolve these issues.
 Essentially, we search for changes similar to the target change from software repositories and then use their distance value to identify the target change as buggy or clean.
 We name this model the \underline{sim}ilar commit change \underline{fin}der ({\simfin}), which searches for similar changes.
-We also develop a \underline{\simfin}-based defect-prediction \underline{mo}del ({\simfinmo}) which alleviates lack of actionable messages by providing patch suggestions.
+We also develop a \underline{\simfin}-based defect-prediction \underline{mo}del ({\simfinmo}) which alleviates the lack of actionable messages by providing patch suggestions.
 The intuition of {\simfin} is as follows.
 If the target change is very similar to our searched change (with the lowest distance value, i.e. the closest change existing in a repository), it is most likely to be a buggy change.
 If the target change is very different from our searched change, then it is more likely to be a clean change.
@@ -49,5 +49,5 @@ The contributions of our work is that:
 \begin{enumerate}
     \item We propose a completely new paradigm of defect prediction approach.
     \item With our model, we can alleviate the lack of actionable messages by suggesting patches that are used to fix the searched similar change.
-    \item We mitigate the cold-start problem because our model is a fully universal, and needs no single previous commit for a test instance because we do not use historical metrics.
+    \item We mitigate the cold-start problem because our model is fully universal, and needs no single previous commit for a test instance because we do not use historical metrics.
 \end{enumerate}
